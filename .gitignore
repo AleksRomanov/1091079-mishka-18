@@ -11,3 +11,6 @@ npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
+gulpfile.js
+package.json
+package-lock.json
