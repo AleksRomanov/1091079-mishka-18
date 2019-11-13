@@ -34,7 +34,8 @@
 </header>
 <main class="main">
   <section class="nice-things">
-    <span class="nice-things__title">Милые штуки ручной работы для дома</span>
+    <h1 class="visually-hidden">Милые штуки ручной работы для дома</h1>
+    <p class="nice-things__title">Милые штуки ручной работы для дома</p>
     <img class="nice-things__image" src="#" alt="Милые штуки ручной работы для дома">
     <ul class="nice-things__list">
       <li class="nice-things__item"><a href="#" class="nice-things__link nice-things__link--interior">Предметы интерьера</a></li>
@@ -43,7 +44,7 @@
   </section>
   <section class="best-product">
     <h2 class="best-product__title">Вязаные корзинки</h2>
-    <p class="best-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+    <p class="best-product__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
     <table class="best-product__info">
       <tbody class="best-product__info-table">
       <tr class="best-product__info-table-row">
@@ -90,25 +91,25 @@
             <a class="comment__author-mail" href="mailto:@misssssiskras">@misssssiskras</a>
           </p>
         </blockquote>
-        <p class="comment__buttons slider-buttons">
-          <button class="button comment__previous visually-hidden" aria-label="Предыдущий отзыв"></button>
-          <button class="button comment__next visually-hidden" aria-label="Следующий отзыв"></button>
-        </p>
       </div>
       <a href="#" class="comment__link button">Написать</a>
     </div>
+    <p class="comment__buttons slider-buttons">
+      <button class="button comment__previous" aria-label="Предыдущий отзыв"><span class="visually hidden">Предыдущий отзыв</span></button>
+      <button class="button comment__next" aria-label="Следующий отзыв"><span class="visually hidden">Следующий отзыв</span></button>
+    </p>
   </section>
   <section class="contacts">
     <h2 class="contacts__title">Контакты</h2>
     <ul class="contacts__list">
       <li class="contacts__list-item">
-        <span class="contacts__list-item-type">e-mail:</span>
-        <span class="contacts__list-item-link">
-          <a class="contacts__list-item-link—e-mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
+        <span class="contacts__item-type">e-mail:</span>
+        <span class="contacts__item-link">
+          <a class="contacts__e-mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
       </li>
-      <li class="contacts__list-item">
-        <span class="contacts__list-item-type">Адрес</span>
-        <span class="contacts__list-item-link">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+      <li class="contacts__item">
+        <span class="contacts__item-type">Адрес</span>
+        <span class="contacts__item-link">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
       </li>
     </ul>
     <div class="contacts__map-wrapper">
@@ -119,16 +120,18 @@
 </main>
 <footer class="footer">
   <ul class="footer__socials-list">
-    <li class="footer__socials-list-item footer__socials-list-item--instagram"><a href="#" aria-label="Инстаграм"></a></li>
-    <li class="footer__socials-list-item footer__socials-list-item--facebook"><a href="#" aria-label="Фэйсбук"></a></li>
-    <li class="footer__socials-list-item footer__socials-list-item--twitter"><a href="#" aria-label="Твиттер"></a></li>
+    <li class="footer__socials-item footer__socials-item--instagram"><a href="#" aria-label="Инстаграм"></a></li>
+    <li class="footer__socials-item footer__socials-item--facebook"><a href="#" aria-label="Фэйсбук"></a></li>
+    <li class="footer__socials-item footer__socials-item--twitter"><a href="#" aria-label="Твиттер"></a></li>
   </ul>
-  <div class="footer__developer">
-    <p class="footer__developer-title">Разработано
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__developer developer__copyright" aria-label="Перейти на сайт HTML-академии">
-        <img class="footer__developer developer__logo" src="img/htmlacademy.svg" width="27" height="35" alt="Логотип HTML-академии">
-      </a>
-    </p>
+  <div class="developer">
+    <div class="footer__developer">
+      <p class="footer__developer-title">Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__developer developer__copyright" aria-label="Перейти на сайт HTML-академии">
+          <img class="footer__developer developer__logo" src="img/htmlacademy.svg" width="27" height="35" alt="Логотип HTML-академии">
+        </a>
+      </p>
+    </div>
   </div>
 </footer>
 <!--    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>-->
