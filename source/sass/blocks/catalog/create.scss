@@ -1,0 +1,24 @@
+.create__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+.create__image {
+  background-image: url("/source/img/video-mobile@1x.jpg");
+}
+
+.create__button {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $black;
+}
+
+.create__button--play {
+  width: 101px;
+  height: 77px;
+}

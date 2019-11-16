@@ -1,0 +1,49 @@
+.form-order__title {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  list-style: none;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.page-description {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 500;
+  list-style: none;
+}
+
+.form-order__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  list-style: none;
+}
+
+.form-order__input {
+  font-weight: 500;
+  list-style: none;
+  color: $black;
+  opacity: 0.3;
+}
+
+.form-order__textarea {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $black;
+  opacity: 0.3;
+}
+
+.form-order__footer--small {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.form-order__button {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+}
