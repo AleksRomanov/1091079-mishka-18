@@ -1,8 +1,8 @@
-.catalog-list {
+.catalog__list {
   list-style: none;
 }
 
-.catalog-item__link {
+.catalog__image-link {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -10,7 +10,7 @@
   color: #000000;
 }
 
-.catalog-item__description {
+.catalog__item-description {
   font-size: 13px;
   line-height: 30px;
   font-weight: 500;
@@ -18,7 +18,7 @@
   color: #000000;
 }
 
-.catalog-item__price {
+.catalog__item-price {
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;

@@ -1,6 +1,7 @@
 @import "global/variables";
 @import "global/normalize";
 @import "global/global";
+@import "global/fonts";
 @import "blocks/button";
 @import "blocks/page-header";
 @import "blocks/footer";
@@ -9,5 +10,5 @@
 @import "blocks/index/comment";
 @import "blocks/index/contacts";
 @import "blocks/catalog/catalog";
-@import "blocks/catalog/create";
-@import "blocks/form/form-section";
+@import "blocks/catalog/manufacture";
+@import "blocks/form/form";

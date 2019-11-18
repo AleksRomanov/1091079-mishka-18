@@ -1,4 +1,4 @@
-.create__title {
+.manufacture__title {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -6,19 +6,18 @@
   color: #000000;
 }
 
-.create__image {
+.manufacture__image {
   background-image: url("/source/img/video-mobile@1x.jpg");
 }
 
-.create__button {
+.manufacture__button {
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   text-decoration: none;
   color: $black;
-}
 
-.create__button--play {
-  width: 101px;
-  height: 77px;
+  &--play {
+    background-color: $accent;
+  }
 }

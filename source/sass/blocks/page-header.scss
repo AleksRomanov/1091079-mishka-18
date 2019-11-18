@@ -1,20 +1,6 @@
-.nice-things {
-  background-color: #fafafa;
-  //background-image: url("/source/img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  color: black;
-
-  &__catalog {
-    background-image: none;
-  }
-}
-
-.nice-things__item {
-  background-color: #63d1bb;
-
-  &--darker {
-    background-color: #56c3b2;
-  }
+.page-header__nav-list {
+  list-style: none;
+  text-decoration: none;
 }
 
 .page-nav__link {
@@ -25,25 +11,3 @@
   text-decoration: none;
 }
 
-.main-nav__list {
-  list-style: none;
-}
-
-.nice-things__title {
-  font-size: 27px;
-  line-height: 30px;
-  color: #010000;
-}
-
-.nice-things__list {
-  list-style: none;
-}
-
-.nice-things__link {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-//.nice-things__image {
-//  background-image: url("/source/img/hero-mobile@1x.jpg");
-//}
