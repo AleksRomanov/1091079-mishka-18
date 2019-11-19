@@ -1,0 +1,49 @@
+.form__title {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  list-style: none;
+  color: $accent;
+  text-transform: uppercase;
+}
+
+.form__order__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  list-style: none;
+}
+
+.form__order-description {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 500;
+  list-style: none;
+}
+
+.form__order-input {
+  font-weight: 500;
+  list-style: none;
+  color: $black;
+  opacity: 0.3;
+}
+
+.form__order-textarea {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $black;
+  opacity: 0.3;
+}
+
+.form__order-small {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.form__order-button {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+}

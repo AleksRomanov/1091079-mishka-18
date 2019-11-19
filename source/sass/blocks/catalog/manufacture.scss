@@ -1,0 +1,23 @@
+.manufacture__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+.manufacture__image {
+  background-image: url("/source/img/video-mobile@1x.jpg");
+}
+
+.manufacture__button {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $black;
+
+  &--play {
+    background-color: $accent;
+  }
+}

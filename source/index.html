@@ -3,47 +3,54 @@
 <head>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Мишка - Главная</title>
 </head>
 <body>
 <header class="page-header">
-  <a class="page-header__logo">
-    <img class="page-header__logo-image" src="#" width="149" height="72" alt="Логотип Mishka">
-  </a>
-  <nav class="page-header__nav main-nav">
+  <div class="page-header__menu">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="#" width="149" height="72" alt="Логотип Mishka">
+    </a>
     <button class="main-nav__toogle" type="button">
       <span class="visually-hidden">Меню</span>
     </button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list page-nav">
-        <li class="page-nav__item page-nav__item">
-          <a href="catalog.html" class="page-nav__link">Каталог товаров</a>
-        </li>
-        <li class="page-nav__item page-nav__item">
-          <a href="form.html" class="page-nav__link">Вязание на заказ</a>
-        </li>
-        <li class="page-nav__item page-nav__item">
-          <a href="#" class="page-nav__link page-nav__link--find">Поиск по сайту</a>
-        </li>
-        <li class="page-nav__item page-nav__item">
-          <a href="#" class="page-nav__link page-nav__link--cart">Корзина: <span class="page-nav__link page-nav__link--empty-cart">пока пуста</span></a>
-        </li>
-      </ul>
-    </div>
+  </div>
+  <nav class="page-header__nav">
+    <ul class="page-header__nav-list">
+      <li class="page-header__nav-item">
+        <a href="catalog.html" class="page-header__nav-link">Каталог товаров</a>
+      </li>
+      <li class="page-nav__item">
+        <a href="form.html" class="page-header__nav-link">Вязание на заказ</a>
+      </li>
+      <li class="page-nav__item">
+        <a href="#" class="page-header__nav-link page-header__nav-link--find">Поиск по сайту</a>
+      </li>
+      <li class="page-nav__item">
+        <a href="#" class="page-header__nav-link page-header__nav-link--cart">Корзина:
+          <span class="page-header__empty-cart">пока пуста</span>
+        </a>
+      </li>
+    </ul>
   </nav>
 </header>
 <main class="main">
   <section class="nice-things">
-    <h1 class="visually-hidden">Милые штуки ручной работы для дома</h1>
-    <p class="nice-things__title">Милые штуки ручной работы для дома</p>
-    <img class="nice-things__image" src="#" alt="Милые штуки ручной работы для дома">
+    <img class="nice-things__image" src="img/hero-mobile@1x.jpg" width="575" height="373" alt="Милые штуки ручной работы для дома">
+    <h1 class="nice-things__title">Милые штуки ручной работы для дома</h1>
     <ul class="nice-things__list">
-      <li class="nice-things__item"><a href="#" class="nice-things__link nice-things__link--interior">Предметы интерьера</a></li>
-      <li class="nice-things__item"><a href="#" class="nice-things__link nice-things__link--toys">Детские игрушки</a></li>
+      <li class="nice-things__item">
+        <a href="#" class="nice-things__link">Предметы интерьера</a>
+      </li>
+      <li class="nice-things__item nice-things__item--darker">
+        <a href="#" class="nice-things__link nice-things__link--interior">Детские игрушки</a>
+      </li>
     </ul>
   </section>
   <section class="best-product">
     <h2 class="best-product__title">Вязаные корзинки</h2>
+    <span class="best-product__subtitle">Товар недели</span>
     <p class="best-product__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
     <table class="best-product__info">
       <tbody class="best-product__info-table">
@@ -62,7 +69,7 @@
       </tbody>
     </table>
     <p class="best-product__picture">
-      <img class="best-product__image" src="#" width="260" height="315" alt="Вязаные корзинки">
+      <img class="best-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
     </p>
     <p class="best-product__price">Цена: 990 руб.</p>
     <a href="#" class="button best-product__button">Заказать</a>
@@ -79,21 +86,23 @@
     </ul>
   </section>
   <section class="comment">
-    <div class="comment__wrapper slider">
-      <h2 class="comment__title">Отзывы</h2>
-      <div class="comment__wrapper slider__list">
-        <blockquote class="comment__item slider__item">
-          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
-          В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-          и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-          <p class="comment__author">
-            <cite class="comment__author-fullname">Анастасия Красильникова</cite>
-            <a class="comment__author-mail" href="mailto:@misssssiskras">@misssssiskras</a>
-          </p>
-        </blockquote>
+    <h2 class="comment__title">Отзывы</h2>
+
+    <div class="comment__slider">
+      Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+      В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+      и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+      <p class="comment__author">
+        <cite class="comment__author-fullname">Анастасия Красильникова</cite>
+        <a class="comment__author-mail" href="mailto:@misssssiskras">@misssssiskras</a>
+      </p>
+      <div class="comment__control-wrapper">
+        <span class="comment__control-prev"></span>
+        <span class="comment__control-next"></span>
       </div>
-      <a href="#" class="comment__link button">Написать</a>
     </div>
+
+    <a href="#" class="comment__link button">Написать</a>
     <p class="comment__buttons slider-buttons">
       <button class="button comment__previous" aria-label="Предыдущий отзыв"><span class="visually hidden">Предыдущий отзыв</span></button>
       <button class="button comment__next" aria-label="Следующий отзыв"><span class="visually hidden">Следующий отзыв</span></button>
@@ -113,7 +122,8 @@
       </li>
     </ul>
     <div class="contacts__map-wrapper">
-      <iframe class="contacts__map" src="#"></iframe>
+      <img src="img/map-mobile@1x.jpg" alt="Наши координаты">
+      <!--      <iframe class="contacts__map" src="#"></iframe>-->
     </div>
     <a href="#" class="contacts__link button">Напишите нам</a>
   </section>
@@ -126,11 +136,10 @@
   </ul>
   <div class="developer">
     <div class="footer__developer">
-      <p class="footer__developer-title">Разработано
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__developer developer__copyright" aria-label="Перейти на сайт HTML-академии">
-          <img class="footer__developer developer__logo" src="img/htmlacademy.svg" width="27" height="35" alt="Логотип HTML-академии">
-        </a>
-      </p>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__developer developer__copyright" aria-label="Перейти на сайт HTML-академии">
+        <span class="footer__developer-title">Разработано</span>
+        <img class="footer__developer developer__logo" src="img/htmlacademy.svg" width="27" height="35" alt="Логотип HTML-академии">
+      </a>
     </div>
   </div>
 </footer>

@@ -3,100 +3,86 @@
 <head>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <title>HTML Academy: Мишка - Страница каталога</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Мишка - Каталог</title>
 </head>
 <body>
 <header class="page-header">
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="#" width="149" height="72" alt="Логотип Mishka">
-  </a>
-  <nav class="page-header__nav main-nav">
+  <div class="header-main">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="#" width="149" height="72" alt="Логотип Mishka">
+    </a>
     <button class="main-nav__toogle" type="button">
       <span class="visually-hidden">Меню</span>
     </button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list page-nav">
-        <li class="page-nav__item page-nav__item">
-          <a class="page-nav__link">Каталог товаров</a>
-        </li>
-        <li class="page-nav__item page-nav__item">
-          <a href="form.html" class="page-nav__link">Вязание на заказ</a>
-        </li>
-        <li class="page-nav__item page-nav__item">
-          <a href="#" class="page-nav__link page-nav__link--find">Поиск по сайту</a>
-        </li>
-        <li class="page-nav__item page-nav__item">
-          <a href="#" class="page-nav__link page-nav__link--cart">Корзина: <span class="page-nav__link page-nav__link--empty-cart">пока пуста</span></a>
-        </li>
-      </ul>
-    </div>
+  </div>
+  <nav class="page-header__nav main-nav">
+    <ul class="main-nav__list page-nav">
+      <li class="page-nav__item page-nav__item">
+        <a href="catalog.html" class="page-nav__link">Каталог товаров</a>
+      </li>
+      <li class="page-nav__item page-nav__item">
+        <a href="form.html" class="page-nav__link">Вязание на заказ</a>
+      </li>
+      <li class="page-nav__item page-nav__item">
+        <a href="#" class="page-nav__link page-nav__link--find">Поиск по сайту</a>
+      </li>
+      <li class="page-nav__item page-nav__item">
+        <a href="#" class="page-nav__link page-nav__link--cart">Корзина: <span class="page-nav__link page-nav__link--empty-cart">пока пуста</span></a>
+      </li>
+    </ul>
   </nav>
+  <div class="nice-things nice-things__catalog">
+    <h1 class="nice-things__title">Каталог товаров</h1>
+  </div>
 </header>
 <main>
   <section class="catalog">
-    <h1 class="page-title">Каталог товаров</h1>
-    <ul class="catalog__list catalog-list">
-      <li class="catalog-list__item">
-        <article class="catalog-item">
-          <a href="#" class="catalog-item__image">
-            <img class="catalog-item__photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Зайчик-попрыгайчик">
-          </a>
-          <div class="catalog-item__info">
-            <div class="catalog-item__content">
-              <h2 class="catalog-item__name"><a href="" class="catalog-item__link">Зайчик-попрыгайчик </a></h2>
-              <span class="catalog-item__description">Рост 30 см, вес 200 г</span>
-            </div>
-            <div class="catalog-item__footer">
-              <span class="catalog-item__price">1 200 руб.</span>
-              <a href="" class="catalog-item__buy">В корзину</a>
-            </div>
-          </div>
-        </article>
+    <h1 class="visually-hidden">Каталог товаров</h1>
+    <ul class="catalog__list">
+      <li class="catalog__list-item">
+        <a href="#" class="catalog__image-link">
+          <img class="catalog__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Зайчик-попрыгайчик">
+        </a>
+        <a href="" class="catalog__item-link">Зайчик-попрыгайчик </a>
+        <span class="catalog__item-description">Рост 30 см, вес 200 г</span>
+        <div class="catalog__item-cart-panel">
+          <span class="catalog__item-price">1 200 руб.</span>
+          <a href="" class="catalog__item-cart">В корзину</a>
+        </div>
       </li>
-      <li class="catalog-list__item">
-        <article class="catalog-item">
-          <a href="#" class="catalog-item__image">
-            <img class="catalog-item__photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Корзинка для белья">
-          </a>
-          <div class="catalog-item__info">
-            <div class="catalog-item__content">
-              <h2 class="catalog-item__name"><a href="" class="catalog-item__link">Корзинка для белья</a></h2>
-              <span class="catalog-item__description">Диаметр 15 см, высота 10 см</span>
-            </div>
-            <div class="catalog-item__footer">
-              <span class="catalog-item__price">690 руб.</span>
-              <a href="#" class="catalog-item__buy">В корзину</a>
-            </div>
-          </div>
-        </article>
+      <li class="catalog__list-item">
+        <a href="#" class="catalog__image-link">
+          <img class="catalog__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Корзинка для белья">
+        </a>
+        <a href="" class="catalog__item-link">Корзинка для белья</a>
+        <span class="catalog__item-description">Диаметр 15 см, высота 10 см</span>
+        <div class="catalog__item-cart-panel">
+          <span class="catalog__item-price">690 руб.</span>
+          <a href="#" class="catalog__item-cart">В корзину</a>
+        </div>
       </li>
-      <li class="catalog-list__item">
-        <article class="catalog-item">
-          <a href="#" class="catalog-item__image">
-            <img class="catalog-item__photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Большая корзинка для игрушек">
-          </a>
-          <div class="catalog-item__info">
-            <div class="catalog-item__content">
-              <h2 class="catalog-item__name"><a href="" class="catalog-item__link">Большая корзинка для игрушек</a></h2>
-              <span class="catalog-item__description">Диаметр 30 см, высота 30 см</span>
-            </div>
-            <div class="catalog-item__footer">
-              <span class="catalog-item__price">1 500 руб.</span>
-              <a href="#" class="catalog-item__buy">В корзину</a>
-            </div>
-          </div>
-        </article>
+      <li class="catalog__list-item">
+        <a href="#" class="catalog__image-link">
+          <img class="catalog__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Большая корзинка для игрушек">
+        </a>
+        <a href="" class="catalog__item-link">Большая корзинка для игрушек</a>
+        <span class="catalog__item-description">Диаметр 30 см, высота 30 см</span>
+        <div class="catalog__item-cart-panel">
+          <span class="catalog__item-price">1 500 руб.</span>
+          <a href="#" class="catalog__item-cart">В корзину</a>
+        </div>
       </li>
     </ul>
   </section>
-  <section class="create">
-    <span class="create__title">Процесс производства</span>
-    <div class="create__wrapper">
-      <img src="#" width="100" height="100" class="create__image">
-      <a class="create__button create__button--play button" href="#"></a>
+  <section class="manufacture">
+    <span class="manufacture__title">Процесс производства</span>
+    <div class="manufacture__wrapper">
+      <img src="img/video-mobile@1x.jpg" width="260" height="150" class="manufacture__image" alt="Видео производства">
+      <a class="manufacture__button manufacture__button--play button" href="#"></a>
     </div>
-    <span class="create__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</span>
-    <a href="#" class="create__button button">Сделать заказ</a>
+    <span class="manufacture__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</span>
+    <a href="#" class="button manufacture__button">Сделать заказ</a>
   </section>
 </main>
 <footer class="footer">
