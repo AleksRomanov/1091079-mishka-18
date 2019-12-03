@@ -1,3 +1,7 @@
+.about {
+  padding: 0 5%;
+}
+
 .about__title {
   font-size: 25px;
   line-height: 30px;
@@ -9,4 +13,21 @@
   line-height: 20px;
   font-weight: 700;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding: 3%;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .about__item {
+    width: 334px;
+    margin-right: 3%;
+  }
 }

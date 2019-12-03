@@ -1,27 +1,127 @@
+
+
+.catalog__title-box {
+  background-color: #f1f1f1;
+  padding: 10% 0;
+}
+
+.catalog__title {
+  text-align: center;
+}
+
 .catalog__list {
   list-style: none;
+  padding: 5%;
 }
 
-.catalog__image-link {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-  text-decoration: none;
-  color: #000000;
+.catalog__image {
+  background-image: url("/source/img/photo-hare-mobile@1x.jpg");
 }
 
-.catalog__item-description {
-  font-size: 13px;
-  line-height: 30px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #000000;
+@media (min-width: $tablet-width) {
+  .catalog__title-box {
+    background-color: #f1f1f1;
+    padding: 5% 0;
+  }
+
+  .catalog__title {
+    text-align: center;
+  }
+
+  .catalog__list {
+    padding: 0 5%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__image-link {
+    display: flex;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .catalog__item-description {
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .catalog__item-price {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .catalog__image-link {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+  }
 }
 
-.catalog__item-price {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 700;
-  text-decoration: none;
-  color: #000000;
+@media (min-width: $desktop-width) {
+  .catalog__title-box {
+    background-color: #f1f1f1;
+    padding: 5% 0;
+  }
+
+  .catalog__title {
+    text-align: center;
+  }
+
+  .catalog__list {
+    padding: 0 5%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__list-item {
+    width: 30%;
+  }
+
+  .catalog__image-link {
+    margin: 0;
+    display: block;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .catalog__item-link {
+    margin-right: 2%;
+  }
+
+  .catalog__item-description {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+    //margin-right: 55%;
+  }
+
+  .catalog__item-price {
+    margin: 0;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+  }
 }

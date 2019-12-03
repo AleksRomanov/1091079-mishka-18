@@ -1,12 +1,175 @@
-.page-header__nav-list {
-  list-style: none;
+.page-header {
+  padding: 0;
+  text-align: center;
+}
+
+.page-header--closed p {
+  padding: 20px 8%;
+}
+
+.page-header__logo {
   text-decoration: none;
 }
 
-.page-nav__link {
-  font-size: 17px;
+.page-header__toogle {
+  border: none;
+  background-color: transparent;
+}
+
+.page-header__delivery-info {
+  display: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
   line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-  text-decoration: none;
+  font-weight: 400;
+}
+
+.page-header__logo-image {
+  padding: 15%;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.page-header__menu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.page-nav__item--arrivals,
+.page-nav__item--sail {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2% 2%;
+  }
+
+  .page-header--closed p {
+    padding: 0;
+  }
+
+  .page-header__menu {
+    order: 1;
+    margin-right: 40%;
+  }
+
+  .page-nav__item {
+    order: 4;
+
+    &--form {
+      order: 5;
+    }
+
+    &--search {
+      order: 2;
+    }
+
+    &--cart {
+      order: 3;
+    }
+  }
+
+  .page-nav__item--catalog {
+    margin-right: 2%;
+  }
+
+  .page-header__logo-image,
+  .page-nav__item-search-text,
+  .page-header__toogle {
+    display: none;
+
+    &--tablet {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      //margin-left: 20%;
+    }
+  }
+
+  .page-header__delivery-info {
+    display: inline-block;
+    order: 6;
+    margin-left: auto;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2% 2%;
+  }
+
+  .page-header--closed p {
+    padding: 0;
+    margin: 0 3%;
+  }
+
+  .page-header__menu {
+    order: 3;
+    margin-right: 0;
+  }
+
+  .page-nav__item {
+    order: 1;
+    padding: 0;
+
+    &--form {
+      order: 2;
+      margin-right: 8%;
+    }
+
+    &--search {
+      order: 4;
+    }
+
+    &--cart {
+      order: 5;
+    }
+
+    &--arrivals {
+      order: 6;
+    }
+
+    &--sail {
+      order: 7;
+    }
+  }
+
+  .page-header__logo-image,
+  .page-nav__item-search-text,
+  .page-header__toogle {
+    display: none;
+
+    &--desktop {
+      display: inline-block;
+      padding: 0;
+    }
+  }
+
+  .page-header__delivery-info {
+    display: inline-block;
+    order: 8;
+    margin-left: auto;
+  }
+
+  .page-nav__item--arrivals,
+  .page-nav__item--sail {
+    display: inline-block;
+  }
 }

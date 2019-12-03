@@ -1,0 +1,60 @@
+.page-header__nav {
+  display: none;
+}
+
+.page-header__nav-list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.page-header__nav-link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+}
+
+.page-nav__item {
+  margin: 0;
+  border-top: 1px solid #ececec;
+}
+
+.page-nav__item--cart {
+  border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .page-nav__item,
+  .page-nav__item--cart {
+    border: none;
+
+    &--cart {
+      padding: 3% 0;
+      padding-left: 5%;
+    }
+
+    &--search {
+      padding: 3%;
+    }
+
+    &--catalog {
+      margin-right: 5%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__menu {
+    margin-right: 10%;
+  }
+
+  .page-nav__item--form {
+    margin-right: 8%;
+  }
+
+  .page-nav__item--arrivals {
+    margin-right: 2%;
+  }
+}

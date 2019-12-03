@@ -7,8 +7,63 @@
   line-height: 18px;
   font-weight: 700;
   list-style: none;
+  height: 0;
 }
 
 .footer__socials-list {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  margin: 0 auto;
+  border-bottom: 1px solid #dedede;
+  width: 80%;
+}
+
+.footer__developer {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #000000;
+  padding: 5%;
+
+  .developer__logo {
+    padding: 0;
+  }
+}
+
+.developer__copyright {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__logo {
+  display: none;
+}
+
+.footer__socials-item {
+  margin-right: 3%;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .footer__logo {
+    display: inline-block;
+  }
+
+  .footer__logo,
+  .developer {
+    width: 25%;
+  }
+
+  .footer__developer,
+  .footer__socials-list {
+    padding: 0;
+    border: none;
+  }
 }
