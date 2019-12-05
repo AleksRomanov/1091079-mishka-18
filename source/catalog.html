@@ -8,27 +8,34 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="header-main">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="#" width="149" height="72" alt="Логотип Mishka">
+  <div class="page-header__menu">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
     </a>
     <button class="main-nav__toogle" type="button">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.958px" height="14px" viewBox="0 0 19.958 14" enable-background="new 0 0 19.958 14" xml:space="preserve" fill="#231F20">
+        <rect width="19.958" height="2"/>
+        <rect y="6" fill="#231F20" width="19.958" height="2"/>
+        <rect y="12" fill="#231F20" width="19.958" height="2"/>
+      </svg>
       <span class="visually-hidden">Меню</span>
     </button>
   </div>
-  <nav class="page-header__nav main-nav">
-    <ul class="main-nav__list page-nav">
-      <li class="page-nav__item page-nav__item">
-        <a href="catalog.html" class="page-nav__link">Каталог товаров</a>
+  <nav class="page-header__nav">
+    <ul class="page-header__nav-list">
+      <li class="page-header__nav-item">
+        <a href="catalog.html" class="page-header__nav-link">Каталог товаров</a>
       </li>
-      <li class="page-nav__item page-nav__item">
-        <a href="form.html" class="page-nav__link">Вязание на заказ</a>
+      <li class="page-nav__item">
+        <a href="form.html" class="page-header__nav-link">Вязание на заказ</a>
       </li>
-      <li class="page-nav__item page-nav__item">
-        <a href="#" class="page-nav__link page-nav__link--find">Поиск по сайту</a>
+      <li class="page-nav__item">
+        <a href="#" class="page-header__nav-link page-header__nav-link--find">Поиск по сайту</a>
       </li>
-      <li class="page-nav__item page-nav__item">
-        <a href="#" class="page-nav__link page-nav__link--cart">Корзина: <span class="page-nav__link page-nav__link--empty-cart">пока пуста</span></a>
+      <li class="page-nav__item">
+        <a href="#" class="page-header__nav-link page-header__nav-link--cart">Корзина:
+          <span class="page-header__empty-cart">пока пуста</span>
+        </a>
       </li>
     </ul>
   </nav>
