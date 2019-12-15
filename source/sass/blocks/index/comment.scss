@@ -1,18 +1,23 @@
 .comment {
-  padding: 5%;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
+  width: 81.25%;
 
   .comment__title {
     order: 0;
   }
 
   .comment__slider {
+    order: 2;
+  }
+
+  .comment__slider-text {
     order: 1;
   }
 
   .comment__link {
-    order: 2;
+    order: 3;
   }
 
   .comment__previous,
@@ -27,6 +32,11 @@
   line-height: 30px;
   font-weight: 700;
   list-style: none;
+}
+
+.comment__wrapper {
+  margin: 0 auto;
+  padding: 0;
 }
 
 .comment__slider {
@@ -46,14 +56,25 @@
   font-weight: 700;
   text-decoration: none;
 }
+
 @media (min-width: $tablet-width) {
   .comment {
-    background-image: url("/source/img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
+    background-size: contain;
+    background-position: 0 0;
     background-repeat: no-repeat;
-    padding: 3%;
+    margin: 0;
+    width: 100%;
+
+    .comment__wrapper {
+      margin: 0;
+      padding: 0 6%;
+      position: relative;
+    }
 
     .comment__title {
       order: 0;
+      margin-bottom: 20px;
     }
 
     .comment__slider {
@@ -62,18 +83,22 @@
 
     .comment__link {
       order: 1;
+      position: absolute;
+      top: 0;
+      right: 5%;
     }
 
     .comment__previous,
     .comment__next {
-      width: 49%;
+      width: 83px;
       border: none;
     }
   }
 
   .comment__title {
     display: inline-block;
-    margin-right: 60%;
+    margin: 0;
+    margin-bottom: 5px;
   }
 
   .comment__link {
@@ -81,6 +106,10 @@
     width: 175px;
     margin: 0 auto;
     padding: 10px 20px;
+  }
+
+  .comment__slider-text {
+    margin: 0;
   }
 
   .comment__author {
@@ -91,6 +120,8 @@
   .comment__control-wrapper {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
   }
 
   .comment__previous,
@@ -108,6 +139,12 @@
 
 @media (min-width: $desktop-width) {
   .comment {
-    margin: 0 5%;
+    width: 1150px;
+    background-position: 5% 0;
+    margin: 0 auto;
+  }
+
+  .comment__wrapper {
+    padding: 0 0 0 11%;
   }
 }

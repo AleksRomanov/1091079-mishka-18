@@ -1,5 +1,6 @@
 .about {
-  padding: 0 5%;
+  margin: 0 auto;
+  width: 81.25%;
 }
 
 .about__title {
@@ -13,11 +14,17 @@
   line-height: 20px;
   font-weight: 700;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about__item {
+  padding: 30px 0;
 }
 
 @media (min-width: $tablet-width) {
   .about {
-    padding: 3%;
+    width: 87%;
   }
 
   .about__list {
@@ -27,7 +34,59 @@
   }
 
   .about__item {
+    padding-top: 30px;
     width: 334px;
-    margin-right: 3%;
+
+    &--flower {
+      order: 0;
+    }
+
+    &--skein {
+      order: 1;
+    }
+
+    &--money {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 3;
+    }
+
+    &--heart {
+      order: 4;
+
+      span {
+        width: 300px;
+        display: inline-block;
+      }
+    }
+
+    &--gift {
+      order: 5;
+
+      span {
+        width: 271px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .about__item-text {
+    width: 300px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    //width: 1150px;
+    //width: 60.87%;
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .about__item {
+    width: 45%;
   }
 }

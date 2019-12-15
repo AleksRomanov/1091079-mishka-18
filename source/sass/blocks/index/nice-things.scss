@@ -1,8 +1,15 @@
 .nice-things {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   background-color: #fafafa;
   background-repeat: no-repeat;
   color: black;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 373px;
+  margin: 0 auto;
 }
 
 .nice-things__catalog {
@@ -12,7 +19,7 @@
 .nice-things__item {
   position: relative;
   background-color: $accent;
-  padding: 5%;
+  padding: 10px 5%;
 
   &--darker {
     background-color: #56c3b2;
@@ -20,22 +27,26 @@
 }
 
 .nice-things__title {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translateX(-50%);
   text-align: center;
   font-size: 27px;
   line-height: 30px;
   color: #010000;
-  width: 81%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.nice-things__title-content {
+  display: inline-block;
+  width: 259px;
 }
 
 .nice-things__list {
   list-style: none;
-  margin: 0;
+  //margin: 0;
   padding: 0;
   font-size: 0;
+  width: 100%;
+  margin-top: auto;
 }
 
 .nice-things__link {
@@ -58,14 +69,14 @@
     background-repeat: no-repeat;
     width: 20%;
     height: 100%;
-    background-image: url("/source/img/icon-interior.svg");
+    background-image: url("../img/icon-interior.svg");
     right: 5%;
   }
 
   &--interior::before {
     width: 20%;
     height: 100%;
-    background-image: url("/source/img/icon-toy.svg");
+    background-image: url("../img/icon-toy.svg");
   }
 }
 
@@ -81,9 +92,23 @@
 
 @media (min-width: $tablet-width) {
   .nice-things {
+    position: relative;
     top: -20px;
     z-index: -1;
     background-color: #fafafa;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 34px;
+      z-index: 2;
+    }
   }
 
   .nice-things__title {
@@ -94,15 +119,28 @@
     width: 1150px;
   }
 
+  .nice-things__list {
+    display: flex;
+  }
+
   .nice-things__item {
-    display: inline-block;
-    width: 40%;
-    image: url("/source/img/bg-zigzag-fill.svg");
+    width: 100%;
+    min-height: 119px;
   }
 
   .nice-things__link {
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nice-things {
+    width: 1150px;
+
+    &::before {
+      bottom: -1px;
+    }
   }
 }

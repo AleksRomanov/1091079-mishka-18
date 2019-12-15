@@ -1,11 +1,17 @@
 .manufacture {
-  padding: 5%;
+  padding: 0 10%;
   display: flex;
   flex-wrap: wrap;
 }
 
+.manufacture__title-box {
+  border: 1px solid #ececec;
+  margin-bottom: 30px;
+}
+
 .manufacture__title {
-  order: 0;
+  text-align: center;
+  margin: 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -14,24 +20,33 @@
 }
 
 .manufacture__wrapper {
-  order: 2;
+  margin: 0;
 }
 
 .manufacture__wrapper-image {
   background-image: url("/source/img/video-mobile@1x.jpg");
-  order: 1;
 }
 
 .manufacture__button {
+  display: block;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   text-decoration: none;
   color: $black;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
 
   &--play {
     background-color: $accent;
   }
+}
+
+.manufacture__description {
+  display: block;
+  padding-left: 20%;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,20 +54,54 @@
     margin: 0;
     padding: 5%;
   }
+
+  .manufacture__title-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .manufacture__wrapper {
+    order: 0;
+    margin-bottom: 20px;
+  }
+
+  .manufacture__title {
+    order: 1;
+    width: 100%;
+    text-align: left;
+    padding-left: 15%;
+    margin-bottom: 20px;
+  }
+
+  .manufacture__description {
+    order: 2;
+    width: 100%;
+    text-align: left;
+    padding-left: 10%;
+    margin-bottom: 20px;
+  }
+
+  .manufacture__button {
+    order: 3;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .manufacture {
     margin: 0;
-    padding: 0 5%;
+    padding: 0;
     display: flex;
+    width: 1150px;
+    margin: 0 auto;
   }
 
   .manufacture__title-box {
     display: flex;
     flex-wrap: wrap;
-    width: 21%;
-    padding: 2%;
+    width: 100%;
+    position: relative;
+    min-height: 446px;
+    flex-direction: column;
   }
 
   .manufacture__title {
@@ -62,10 +111,16 @@
     font-weight: 700;
     text-decoration: none;
     color: #000000;
+    width: 30%;
+    margin-left: auto;
+    padding-left: 70%;
+    align-self: flex-start;
   }
 
   .manufacture__wrapper {
     display: inline-block;
+    position: absolute;
+    content: "";
 
     .manufacture__wrapper-image {
       //width: 40%;
@@ -82,6 +137,9 @@
     font-weight: 700;
     text-decoration: none;
     color: $black;
+    width: 30%;
+    margin-left: auto;
+    margin-right: 1.5%;
 
     &--play {
       background-color: $accent;
@@ -90,6 +148,9 @@
 
   .manufacture__description {
     order: 2;
-    margin-bottom: 80%;
+    width: 30%;
+    margin-left: auto;
+    padding-left: 70%;
+    align-self: flex-start;
   }
 }
