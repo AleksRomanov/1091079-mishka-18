@@ -14,15 +14,23 @@
 body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 22px;
   background-color: white;
   color: $black;
-  min-width: 320px;
-  margin: 0 auto;
+  //min-width: 320px;
+  margin: 0;
+  padding: 0;
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+
+//.container {
+//  //width: 1160px;
+//  width: 100%;
+//  margin: 0 auto;
+//  padding: 0 20px;
+//}
