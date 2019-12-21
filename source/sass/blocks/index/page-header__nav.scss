@@ -1,11 +1,28 @@
-
 .page-header__nav {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  //li:not(:first-child) {
+  //  //display: inline-block;
+  //  //padding: 0;
+  //  display: none;
+  //}
+
+  .page-nav__item {
+    padding: 10px 0;
+    //min-height: 79px;
+    align-items: center;
+    margin: 0 auto;
+
+    &--menu {
+      display: flex;
+    }
+  }
 }
+
 
 .page-header__menu {
   display: flex;
@@ -15,10 +32,12 @@
 
 .page-header__logo {
   text-decoration: none;
+  margin: 0 auto;
 }
 
 .page-header__logo-image {
-  padding: 15%;
+  margin: 0;
+  box-sizing: border-box;
 
   &--tablet {
     display: none;
@@ -32,6 +51,14 @@
 .page-header__toogle {
   border: none;
   background-color: transparent;
+
+  &--close {
+    display: none;
+  }
+
+  svg {
+    margin-left: -40px;
+  }
 }
 
 .page-nav__item {
@@ -153,17 +180,16 @@
 @media (min-width: $desktop-width) {
   .page-nav__item {
     order: 3;
-    margin-right: 3%;
-
+    margin: 0;
 
     &--form {
       order: 1;
-      margin-right: 5%;
+      margin: 0;
     }
 
     &--search {
       order: 4;
-      margin-right: 8%;
+      margin: 0;
     }
 
     &--cart {
@@ -172,7 +198,7 @@
 
     &--catalog {
       order: 0;
-      margin-right: 5%;
+      margin-right: 55px;
     }
 
     &--delivery {
@@ -181,14 +207,20 @@
 
     &--arrivals {
       order: 6;
-      display: inline-block;
       width: 179px;
     }
 
     &--sail {
       order: 7;
-      display: inline-block;
     }
+  }
+
+  .page-header__nav-link {
+    padding: 31px 0;
+  }
+
+  .page-header__nav-wrapper {
+    padding: 0 38px;
   }
 
   .page-header__logo-image {
