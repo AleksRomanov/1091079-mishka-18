@@ -5,11 +5,11 @@
   padding: 0;
   margin: 0;
 
-  //li:not(:first-child) {
-  //  //display: inline-block;
-  //  //padding: 0;
-  //  display: none;
-  //}
+  li:not(:first-child) {
+    //display: inline-block;
+    //padding: 0;
+    display: none;
+  }
 
   .page-nav__item {
     padding: 10px 0;
@@ -19,6 +19,9 @@
 
     &--menu {
       display: flex;
+      padding: 20px 0;
+      align-items: center;
+      margin-bottom: 20px;
     }
   }
 }
@@ -56,6 +59,10 @@
     display: none;
   }
 
+  &--open {
+    display: block;
+  }
+
   svg {
     margin-left: -40px;
   }
@@ -65,7 +72,7 @@
   margin: 0;
   width: 100%;
   padding: 0;
-  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 
   &--delivery {
     display: none;
