@@ -1,3 +1,4 @@
+
 .page-header__nav {
   display: flex;
   flex-wrap: wrap;
@@ -38,12 +39,6 @@
   //position: relative;
   display: block;
   background-color: transparent;
-  width: 24px;
-  height: 18px;
-  cursor: pointer;
-  border: 0;
-  position: absolute;
-  right: 30px;
 }
 
 .page-nav__item {
@@ -51,7 +46,7 @@
   margin: 0;
   width: 100%;
   padding: 0;
-  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 
   &--menu {
     display: flex;
