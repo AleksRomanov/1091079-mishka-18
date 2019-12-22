@@ -19,8 +19,93 @@
 }
 
 .about__item {
-  padding: 30px 0;
+  padding: 40px 0 0 0;
+
+  &--flower {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background-image: url("../img/icon-feature-flower.svg");
+      width: 32px;
+      height: 37px;
+    }
+  }
+
+  &--skein {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background-image: url("../img/icon-feature-ball.svg");
+      width: 35px;
+      height: 34px;
+    }
+  }
+
+  &--money {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background-image: url("../img/icon-feature-money.svg");
+      width: 47px;
+      height: 27px;
+    }
+  }
+
+  &--rocket {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background-image: url("../img/icon-feature-rocket.svg");
+      width: 55px;
+      height: 23px;
+    }
+  }
+
+  &--heart {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background-image: url("../img/icon-feature-heart.svg");
+      width: 34px;
+      height: 27px;
+    }
+  }
+
+  &--gift {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background-image: url("../img/icon-feature-gift.svg");
+      width: 33px;
+      height: 32px;
+    }
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .about {
@@ -36,46 +121,42 @@
   .about__item {
     padding-top: 30px;
     width: 334px;
+  }
 
-    &--flower {
-      order: 0;
-    }
+  &--skein {
+    order: 1;
+  }
 
-    &--skein {
-      order: 1;
-    }
+  &--money {
+    order: 2;
+  }
 
-    &--money {
-      order: 2;
-    }
+  &--rocket {
+    order: 3;
+  }
 
-    &--rocket {
-      order: 3;
-    }
+  &--heart {
+    order: 4;
 
-    &--heart {
-      order: 4;
-
-      span {
-        width: 300px;
-        display: inline-block;
-      }
-    }
-
-    &--gift {
-      order: 5;
-
-      span {
-        width: 271px;
-        display: inline-block;
-      }
+    span {
+      width: 300px;
+      display: inline-block;
     }
   }
 
-  .about__item-text {
-    width: 300px;
-    display: inline-block;
+  &--gift {
+    order: 5;
+
+    span {
+      width: 271px;
+      display: inline-block;
+    }
   }
+}
+
+.about__item-text {
+  width: 300px;
+  display: inline-block;
 }
 
 @media (min-width: $desktop-width) {
