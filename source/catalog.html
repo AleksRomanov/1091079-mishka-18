@@ -119,10 +119,17 @@
   </section>
   <section class="manufacture">
     <div class="manufacture__title-box">
-      <p class="manufacture__title">Процесс производства</p>
       <p class="manufacture__wrapper">
-        <img src="img/video-desktop@1x.jpg" width="682" height="455" class="manufacture__wrapper-image" alt="Видео производства">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+          <img src="img/video-mobile@1x.jpg" width="260" height="150" class="manufacture__wrapper-image" alt="Видео производства">
+        </picture>
+        <a href="#" class="button manufacture__wrapper-play"></a>
       </p>
+    </div>
+    <div class="manufacture__title-box-wrapper">
+      <p class="manufacture__title">Процесс производства</p>
       <span class="manufacture__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</span>
       <button class="button manufacture__button">Сделать заказ</button>
     </div>

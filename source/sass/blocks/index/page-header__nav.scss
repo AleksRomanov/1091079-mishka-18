@@ -256,13 +256,13 @@
 
   .page-header__nav-link--find {
     &::before {
-      position: absolute;
-      content: "";
-      top: -32px;
-      left: 0;
-      border-left: 1px solid #f1f1f1;
-      height: 88px;
-    }
+       position: absolute;
+       content: "";
+       top: -32px;
+       left: 0;
+       border-left: 1px solid #f1f1f1;
+       height: 88px;
+     }
   }
 
   .page-header__logo-image,
