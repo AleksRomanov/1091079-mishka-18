@@ -52,6 +52,10 @@
   display: block;
 }
 
+.best-product__table-wrapper {
+  margin-bottom: 75px;
+}
+
 @media (min-width: $tablet-width) {
   .best-product {
     width: 87%;
@@ -135,10 +139,12 @@
       font-size: 53px;
       line-height: 57px;
       font-weight: 700;
+      margin-bottom: 3px;
     }
 
     .best-product__subtitle {
       order: 0;
+      margin-bottom: 22px;
     }
   }
 

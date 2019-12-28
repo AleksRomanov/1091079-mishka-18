@@ -6,12 +6,11 @@
   background-repeat: no-repeat;
   color: black;
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-size: cover;
-  background-position: center;
+  //background-size: cover;
+  background-position: top;
   min-height: 373px;
   margin: 0 auto;
-  margin-top: -20px;
-
+  margin-top: -11px;
 }
 
 .nice-things__catalog {
@@ -21,7 +20,7 @@
 .nice-things__item {
   position: relative;
   background-color: $accent;
-  padding: 10px 5%;
+  padding: 27px 28px;
 
   &--darker {
     background-color: #56c3b2;
@@ -34,8 +33,8 @@
   line-height: 30px;
   color: #010000;
   margin: 0 auto;
-  margin-top: 69px;
-  margin-bottom: 137px;
+  margin-top: 88px;
+  margin-bottom: 122px;
 }
 
 .nice-things__title-content {
@@ -68,16 +67,16 @@
   &::before {
     position: absolute;
     content: "";
-    top: 10%;
+    top: 22px;
     background-repeat: no-repeat;
-    width: 20%;
+    width: 60px;
     height: 100%;
     background-image: url("../img/icon-interior.svg");
-    right: 5%;
+    right: 18px;
   }
 
   &--interior::before {
-    width: 20%;
+    width: 68px;
     height: 100%;
     background-image: url("../img/icon-toy.svg");
   }
