@@ -8,7 +8,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url(../img/bg-zigzag-line.svg);
+    background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
@@ -106,7 +106,7 @@
     &::before {
       position: absolute;
       content: "";
-      background-image: url(../img/bg-zigzag-line.svg);
+      background-image: url("../img/bg-zigzag-line.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -178,7 +178,8 @@
 
 @media (min-width: $desktop-width) {
   .best-product {
-    width: 1150px;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 
   .best-product__title-wrapper {
