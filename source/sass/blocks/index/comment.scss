@@ -1,38 +1,72 @@
 .comment {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 81.25%;
+  padding: 0 30px;
+  position: relative;
+  min-height: 624px;
+  //margin-bottom: 85px;
 
-  .comment__title {
-    order: 0;
-  }
+  //display: flex;
+  //flex-wrap: wrap;
+  //margin: 0 auto;
+  //margin-bottom: 90px;
 
-  .comment__slider {
-    order: 2;
-  }
+  //.comment__title {
+  //  order: 0;
+  //}
+  //
+  ////.comment__slider {
+  ////  order: 2;
+  ////}
+  //
+  //.comment__slider-text {
+  //  order: 1;
+  //}
+  //
+  //.comment__link {
+  //  order: 3;
+  //}
 
-  .comment__slider-text {
-    order: 1;
-  }
-
-  .comment__link {
-    order: 3;
+  .comment__buttons {
+    display: flex;
+    margin: 0;
+    margin-bottom: 40px;
   }
 
   .comment__previous,
   .comment__next {
-    width: 49%;
+    width: 50%;
     border: none;
+    min-height: 50px;
+  }
+
+  .slider-buttons {
+    .comment__previous {
+      background-image: url("../img/icon-left-arrow.svg");
+      background-repeat: no-repeat;
+      border: 1px solid #f1f1f1;
+      background-position: center;
+    }
+
+    .comment__next {
+      background-image: url("../img/icon-right-arrow.svg");
+      background-repeat: no-repeat;
+      border: 1px solid #f1f1f1;
+      background-position: center;
+    }
   }
 }
 
 .comment__title {
+  margin: 0;
+  margin-bottom: 23px;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
   list-style: none;
 }
+
+//.comment__control-wrapper {
+//  margin-bottom: 10px;
+//}
 
 .comment__wrapper {
   margin: 0 auto;
@@ -46,8 +80,28 @@
   list-style: none;
 }
 
+.comment__slider-text {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+//.comment__control-wrapper p {
+//  margin: 0;
+//}
+
+.comment__author {
+  margin-bottom: 29px;
+}
+
 .comment__author-fullname {
+  font-size: 17px;
+  line-height: 30px;
   font-weight: 700;
+}
+
+.comment__author-mail {
+  font-size: 17px;
+  line-height: 30px;
 }
 
 .comment__link {
@@ -55,7 +109,11 @@
   line-height: 20px;
   font-weight: 700;
   text-decoration: none;
+  min-height: 52px;
+  padding-top: 13px;
+  margin-bottom: 10px;
 }
+
 
 @media (min-width: $tablet-width) {
   .comment {
@@ -64,17 +122,17 @@
     background-position: 0 0;
     background-repeat: no-repeat;
     margin: 0;
-    width: 100%;
+    margin-bottom: 60px;
 
     .comment__wrapper {
-      margin: 0;
-      padding: 0 6%;
+      padding: 0 30px;
       position: relative;
     }
 
     .comment__title {
       order: 0;
       margin-bottom: 20px;
+      max-width: 50%;
     }
 
     .comment__slider {
