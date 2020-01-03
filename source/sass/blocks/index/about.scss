@@ -36,12 +36,18 @@
     margin-left: 8px;
   }
 
+  &--flower span {
+    display: block;
+    width: 73%;
+  }
+
   &--skein {
     margin-bottom: 32px;
   }
 
   &--skein span {
-    width: 211px;
+    display: block;
+    width: 81%;
   }
 
   &--skein::before {
@@ -56,7 +62,8 @@
   }
 
   &--money span {
-    width: 200px;
+    display: block;
+    width: 80%;
   }
 
   &--money::before {
@@ -67,7 +74,8 @@
   }
 
   &--rocket span {
-    width: 250px;
+    display: block;
+    width: 96%;
   }
 
   &--rocket::before {
@@ -90,10 +98,6 @@
     margin-bottom: 22px;
   }
 
-  &--gift span {
-    width: 200px;
-  }
-
   &--gift::before {
     background-image: url("../img/icon-feature-gift.svg");
     width: 33px;
@@ -104,71 +108,125 @@
 }
 
 .about__item-text {
-  width: 73%;
+  display: block;
+  width: 76%;
 }
 
 @media (min-width: $tablet-width) {
   .about {
     padding: 0 50px;
-    margin-bottom: 60px;
+    min-height: 590px;
+    //margin-bottom: 60px;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-left: -5px;
+    margin-bottom: 18px;
   }
 
   .about__list {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    padding-top: 30px;
   }
 
   .about__item {
-    padding-top: 30px;
-    width: 334px;
-  }
+    width: 50%;
+    margin-bottom: 59px;
 
-  &--skein {
-    order: 1;
-  }
+    &--flower {
+      order: 0;
+    }
 
-  &--money {
-    order: 2;
-  }
+    &--flower span {
+      width: 64%;
+      font-size: 20px;
+      line-height: 22px;
+    }
 
-  &--rocket {
-    order: 3;
-  }
+    &--skein {
+      order: 1;
+    }
 
-  &--heart {
-    order: 4;
+    &--skein span {
+      width: 80%;
+      font-size: 20px;
+      line-height: 22px;
+    }
 
-    span {
-      width: 300px;
-      display: inline-block;
+    &--money {
+      order: 2;
+    }
+
+    &--money span {
+      width: 71%;
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    &--rocket {
+      order: 3;
+    }
+
+    &--rocket span {
+      width: 88%;
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    &--heart {
+      order: 4;
+    }
+
+    &--heart span {
+      width: 71%;
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    &--gift {
+      order: 5;
+    }
+
+    &--gift span {
+      width: 71%;
+      font-size: 20px;
+      line-height: 22px;
     }
   }
 
-  &--gift {
-    order: 5;
-
-    span {
-      width: 271px;
-      display: inline-block;
-    }
+  .about__item-text {
+    display: inline-block;
   }
-}
-
-.about__item-text {
-  //width: 300px;
-  display: inline-block;
 }
 
 @media (min-width: $desktop-width) {
   .about {
-    //width: 1150px;
-    //width: 60.87%;
-    width: 700px;
+    max-width: 1150px;
     margin: 0 auto;
+    padding: 64px 225px 0;
   }
 
   .about__item {
-    width: 45%;
+    width: 50%;
+
+    &--heart span {
+      width: 68%;
+    }
+
+    &--money::before {
+      margin-bottom: 23px;
+    }
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: 700;
   }
 }
