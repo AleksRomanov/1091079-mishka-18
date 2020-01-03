@@ -2,14 +2,16 @@
   padding: 0 30px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 58px;
 }
 
 .manufacture__title-box {
-  border: 1px solid #ececec;
-  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  //margin-bottom: 30px;
+  border: 1px solid #ececec;
+  padding-bottom: 32px;
   //flex-wrap: wrap;
 }
 
@@ -18,7 +20,7 @@
   text-align: left;
   margin: 0 auto;
   width: 131px;
-  padding: 20px;
+  padding: 24px 20px;
   padding-left: 70px;
   font-size: 17px;
   line-height: 24px;
@@ -29,8 +31,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: 25px;
-    left: 25px;
+    top: 30px;
+    left: 14px;
     width: 32px;
     height: 32px;
     background-image: url("../img/icon-video.svg");
@@ -41,6 +43,7 @@
 .manufacture__wrapper {
   margin: 0 auto;
   position: relative;
+  padding-bottom: 28px;
 
   .manufacture__wrapper-play {
     position: absolute;
@@ -70,6 +73,7 @@
 }
 
 .manufacture__button {
+  max-width: 192px;
   display: block;
   font-size: 17px;
   line-height: 16px;
@@ -77,7 +81,8 @@
   text-decoration: none;
   color: $black;
   margin: 0 auto;
-  margin-bottom: 30px;
+  padding: 16px 0;
+  //margin-bottom: 32px;
 
   &--play {
     background-color: $accent;
@@ -85,28 +90,45 @@
 }
 
 .manufacture__description {
+  margin: 0 auto;
   display: block;
-  padding-left: 30px;
-  margin-bottom: 30px;
+  //padding-left: 33px;
+  padding-bottom: 25px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  max-width: 192px;
 }
 
 @media (min-width: $tablet-width) {
   .manufacture {
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 50px;
+    padding-bottom: 63px;
   }
 
   .manufacture__title-box {
     //margin: 0;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    padding-bottom: 15px;
+
+    .manufacture__title {
+      order: 1;
+      margin: 0;
+      padding: 0;
+      padding-left: 105px;
+      font-size: 20px;
+      line-height: 24px;
+      padding-bottom: 32px;
+    }
   }
 
   .manufacture__wrapper {
     order: 0;
     margin: 0 auto;
-    margin-bottom: 20px;
+    padding-bottom: 38px;
+    //margin-bottom: 20px;
 
     .manufacture__wrapper-play {
       position: absolute;
@@ -137,6 +159,8 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    order: 2;
+    padding: 0 40px;
   }
 
   .manufacture__title {
@@ -145,31 +169,51 @@
     text-align: left;
     padding-left: 100px;
     margin-bottom: 20px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -5px;
+      left: 41px;
+      width: 32px;
+      height: 32px;
+      background-image: url("../img/icon-video.svg");
+      //background-size: cover;
+    }
   }
 
   .manufacture__description {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
     order: 2;
-    width: auto;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 35px;
     text-align: left;
-    padding-left: 80px;
-    margin-bottom: 20px;
+    //padding-left: 105px;
+    //padding-left: 80px;
+    //margin-bottom: 20px;
   }
 
   .manufacture__button {
+    max-width: none;
     display: block;
     order: 3;
-    margin: 0 auto;
-    width: 90%;
+    margin: 0;
+    //width: 90%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .manufacture {
     margin: 0 auto;
-    padding: 0 30px 20px;
+    //padding: 0 30px 20px;
     display: flex;
     flex-wrap: nowrap;
-    width: 1150px;
+    max-width: 1150px;
   }
 
   .manufacture__title-box {
