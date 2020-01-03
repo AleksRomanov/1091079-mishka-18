@@ -1,42 +1,88 @@
 .manufacture {
-  padding: 0 10%;
+  padding: 0 30px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 58px;
 }
 
 .manufacture__title-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  //margin-bottom: 30px;
   border: 1px solid #ececec;
-  margin-bottom: 30px;
+  padding-bottom: 32px;
+  //flex-wrap: wrap;
 }
 
 .manufacture__title {
-  text-align: center;
-  margin: 0;
+  position: relative;
+  text-align: left;
+  margin: 0 auto;
+  width: 131px;
+  padding: 24px 20px;
+  padding-left: 70px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
   color: #000000;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 14px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/icon-video.svg");
+    //background-size: cover;
+  }
 }
 
 .manufacture__wrapper {
-  margin: 0;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 28px;
+
+  .manufacture__wrapper-play {
+    position: absolute;
+    content: "";
+    top: 36px;
+    left: 80px;
+    width: 101px;
+    height: 77px;
+    background-image: url("../img/icon-play.svg");
+    background-size: cover;
+    border: none;
+  }
 }
 
 .manufacture__wrapper-image {
-  background-image: url("/source/img/video-mobile@1x.jpg");
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .manufacture__button {
+  max-width: 192px;
   display: block;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   text-decoration: none;
   color: $black;
-  width: 90%;
   margin: 0 auto;
-  margin-bottom: 30px;
+  padding: 16px 0;
+  //margin-bottom: 32px;
 
   &--play {
     background-color: $accent;
@@ -44,88 +90,202 @@
 }
 
 .manufacture__description {
+  margin: 0 auto;
   display: block;
-  padding-left: 20%;
-  margin-bottom: 30px;
+  //padding-left: 33px;
+  padding-bottom: 25px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  max-width: 192px;
 }
 
 @media (min-width: $tablet-width) {
   .manufacture {
-    margin: 0;
-    padding: 5%;
+    margin: 0 auto;
+    padding: 0 50px;
+    padding-bottom: 63px;
   }
 
   .manufacture__title-box {
+    //margin: 0;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 15px;
+
+    .manufacture__title {
+      order: 1;
+      margin: 0;
+      padding: 0;
+      padding-left: 105px;
+      font-size: 20px;
+      line-height: 24px;
+      padding-bottom: 32px;
+    }
   }
 
   .manufacture__wrapper {
     order: 0;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    padding-bottom: 38px;
+    //margin-bottom: 20px;
+
+    .manufacture__wrapper-play {
+      position: absolute;
+      content: "";
+      top: 190px;
+      left: 283px;
+      width: 102px;
+      height: 78px;
+      background-image: url("../img/icon-play.svg");
+      background-size: cover;
+    }
+  }
+
+  .manufacture__wrapper-image {
+    margin: 0 auto;
+    width: 668px;
+
+    &--tablet {
+      display: inline-block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+
+  .manufacture__title-box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    order: 2;
+    padding: 0 40px;
   }
 
   .manufacture__title {
     order: 1;
-    width: 100%;
+    width: auto;
     text-align: left;
-    padding-left: 15%;
+    padding-left: 100px;
     margin-bottom: 20px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -5px;
+      left: 41px;
+      width: 32px;
+      height: 32px;
+      background-image: url("../img/icon-video.svg");
+      //background-size: cover;
+    }
   }
 
   .manufacture__description {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
     order: 2;
     width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 35px;
     text-align: left;
-    padding-left: 10%;
-    margin-bottom: 20px;
+    //padding-left: 105px;
+    //padding-left: 80px;
+    //margin-bottom: 20px;
   }
 
   .manufacture__button {
+    max-width: none;
+    display: block;
     order: 3;
+    margin: 0;
+    //width: 90%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .manufacture {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: 1150px;
     margin: 0 auto;
+    //padding: 0 30px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1150px;
   }
 
   .manufacture__title-box {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
     position: relative;
     min-height: 446px;
-    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 700px;
   }
 
   .manufacture__title {
+    margin: 0;
     order: 1;
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
     text-decoration: none;
     color: #000000;
-    width: 30%;
-    margin-left: auto;
-    padding-left: 70%;
-    align-self: flex-start;
+    width: 130px;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 25px;
+      width: 32px;
+      height: 32px;
+      background-image: url("../img/icon-video.svg");
+      //background-size: cover;
+    }
   }
 
   .manufacture__wrapper {
     display: inline-block;
-    position: absolute;
-    content: "";
+    margin: 0;
+    padding: 0;
+    width: 700px;
 
-    .manufacture__wrapper-image {
-      //width: 40%;
-      order: 0;
+    .manufacture__wrapper-play {
+      position: absolute;
+      content: "";
+      top: 188px;
+      left: 290px;
+      width: 101px;
+      height: 78px;
+      background-image: url("../img/icon-play.svg");
+      background-size: cover;
     }
+  }
+
+  .manufacture__wrapper-image {
+    margin: 0;
+    width: 682px;
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: inline-block;
+    }
+  }
+
+  .manufacture__title-box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 350px;
+    padding: 30px;
   }
 
   .manufacture__button {
@@ -137,9 +297,6 @@
     font-weight: 700;
     text-decoration: none;
     color: $black;
-    width: 30%;
-    margin-left: auto;
-    margin-right: 1.5%;
 
     &--play {
       background-color: $accent;
@@ -148,9 +305,9 @@
 
   .manufacture__description {
     order: 2;
-    width: 30%;
-    margin-left: auto;
-    padding-left: 70%;
-    align-self: flex-start;
+    margin: 0;
+    margin-bottom: 100px;
+    padding: 0;
+    width: 240px;
   }
 }
