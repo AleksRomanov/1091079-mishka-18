@@ -416,6 +416,9 @@
   .page-nav__item {
     order: 3;
     margin: 0;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-left: 0px;
 
     &--form {
       position: relative;
@@ -468,7 +471,8 @@
       display: inline-block;
       order: 7;
       width: 180px;
-      margin-right: 400px;
+      margin-right: 418px;
+
     }
   }
 

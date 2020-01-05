@@ -66,11 +66,11 @@
   }
 
   .footer-wrapper {
-    min-height: 126px;
-    padding: 8px 50px;
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 142px;
   }
 
   .footer__developer {
@@ -104,6 +104,8 @@
     padding: 0;
     border: none;
     width: auto;
+    position: relative;
+    top: 5px;
   }
 }
 

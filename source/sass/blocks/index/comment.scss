@@ -83,6 +83,7 @@
 .comment__slider-text {
   margin: 0;
   margin-bottom: 25px;
+  width: 260px;
 }
 
 .comment__author {
@@ -93,11 +94,13 @@
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
+  display: block;
 }
 
 .comment__author-mail {
   font-size: 17px;
   line-height: 30px;
+  display: inline-block;
 }
 
 .comment__link {
