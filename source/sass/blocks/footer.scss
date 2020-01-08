@@ -27,6 +27,16 @@
   border-bottom: 1px solid #dedede;
   padding-bottom: 22px;
   //width: 80%;
+
+  & .footer__socials-list:hover svg {
+    fill: $accent;
+    opacity: 1;
+  }
+
+  & .footer__socials-list:active svg {
+    fill: $accent;
+    opacity: 0.3;
+  }
 }
 
 .footer__developer {
@@ -42,6 +52,18 @@
     width: 42px;
     height: auto;
     object-position: 6px 2px;
+  }
+
+  & .footer__developer-title:hover {
+    opacity: 0.6;
+  }
+
+  & .footer__developer-title:active {
+    opacity: 0.3;
+  }
+
+  & .developer__logo:active {
+    opacity: 0.3;
   }
 }
 
@@ -66,11 +88,11 @@
   }
 
   .footer-wrapper {
-    min-height: 126px;
-    padding: 8px 50px;
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 142px;
   }
 
   .footer__developer {
@@ -87,6 +109,16 @@
   .footer__logo {
     display: inline-block;
 
+    & .footer__logo-image:hover {
+      fill: $accent;
+      opacity: 1;
+    }
+
+    & .footer__logo-image:active {
+      opacity: 0.3;
+      fill: $accent;
+    }
+
     .footer__logo-image {
       width: 102px;
       height: auto;
@@ -95,7 +127,6 @@
 
   .footer__logo,
   .developer {
-    //width: 33.3333%;
     width: 27%;
     display: block;
   }
@@ -104,6 +135,8 @@
     padding: 0;
     border: none;
     width: auto;
+    position: relative;
+    top: 5px;
   }
 }
 
@@ -116,7 +149,6 @@
     max-width: 1050px;
     margin: 0 auto;
     padding: 0;
-    //width: 91.305%;
   }
 
   .footer__logo,

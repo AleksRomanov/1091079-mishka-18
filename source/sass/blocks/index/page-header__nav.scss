@@ -7,14 +7,6 @@
   height: auto;
 }
 
-//.page-header__wrapper {
-//  display: flex;
-//  justify-content: center;
-//  text-align: center;
-//  align-items: center;
-//  border-bottom: 1px solid #ececec;
-//}
-
 .page-header__nav-wrapper {
   display: none;
 
@@ -27,27 +19,22 @@
   text-decoration: none;
   width: 86px;
   height: 35px;
-  //background: red;
   display: flex;
   align-items: center;
   justify-content: center;
-  //color: #fff;
   position: relative;
   padding: 25px 0 19px;
   margin: 0 auto;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-//.page-header__logo-image {
-//  display: block;
-//
-//  &--tablet {
-//    display: none;
-//  }
-//
-//  &--desktop {
-//    display: none;
-//  }
-//}
 
 .page-header__nav-wrapper--nojs {
   display: block;
@@ -130,13 +117,6 @@
   padding: 0;
   border-bottom: 1px solid #ececec;
 
-  //&--menu {
-  //  display: flex;
-  //  align-items: center;
-  //  justify-content: center;
-  //  min-height: 80px;
-  //}
-
   &--catalog {
     padding: 0;
   }
@@ -189,12 +169,30 @@
   display: block;
   padding: 27px 0;
   padding-right: 22px;
-}
 
-//
-//.page-header__nav-link--cart {
-//  padding-bottom: 21px;
-//}
+  & svg {
+    fill: black;
+    opacity: 0.2;
+  }
+
+  &:hover span {
+    opacity: 0.6;
+  }
+
+  &:hover svg {
+    fill: $accent;
+    opacity: 1;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  &:active svg {
+    fill: $accent;
+    opacity: 0.3;
+  }
+}
 
 .page-header__delivery-info {
   margin: 0;
@@ -327,10 +325,15 @@
     }
 
     &--delivery {
-      width: 231px;
+      width: 272px;
       order: 5;
       margin-left: auto;
       text-align: center;
+    }
+
+    &--delivery .page-nav__item-cart-text {
+      letter-spacing: -0.5px;
+      margin-left: 40px;
     }
   }
 
@@ -415,7 +418,8 @@
 
   .page-nav__item {
     order: 3;
-    margin: 0;
+    max-width: 1150px;
+    margin: 0 auto;
 
     &--form {
       position: relative;
@@ -468,7 +472,7 @@
       display: inline-block;
       order: 7;
       width: 180px;
-      margin-right: 400px;
+      margin-right: 418px;
     }
   }
 
@@ -525,5 +529,11 @@
   .page-nav__item--sail a {
     font-size: 15px;
     margin: 0;
+  }
+
+  .page-nav__item-cart-text {
+    font-size: 17px;
+    line-height: 24px;
+    min-width: 234px;
   }
 }
