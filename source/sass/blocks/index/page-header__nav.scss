@@ -330,6 +330,11 @@
       margin-left: auto;
       text-align: center;
     }
+
+    &--delivery .page-nav__item-cart-text {
+      letter-spacing: -0.5px;
+      margin-left: 40px;
+    }
   }
 
   .page-nav__item--catalog,
