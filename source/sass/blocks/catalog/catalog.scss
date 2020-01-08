@@ -116,9 +116,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    margin-top: -60px;
+  }
+
   .catalog__title-box {
     position: relative;
     background-color: #f1f1f1;
+    min-height: 237px;
+    margin-bottom: 29px;
 
     &::before {
       position: absolute;
@@ -138,7 +144,7 @@
   .catalog__title {
     font-size: 43px;
     line-height: 50px;
-    margin-top: -56px;
+    margin-top: 5px;
   }
 
   .catalog__list {
@@ -155,7 +161,7 @@
   .catalog__list-item {
     width: 100%;
     display: flex;
-    padding-bottom: 54px;
+    margin-bottom: 24px;
     max-height: 334px;
   }
 
