@@ -79,6 +79,10 @@
   line-height: 20px;
   font-weight: 700;
   margin-bottom: 5px;
+
+  &:active span {
+    opacity: 0.3;
+  }
 }
 
 .best-product__image {

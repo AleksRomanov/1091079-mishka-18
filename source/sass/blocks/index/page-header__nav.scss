@@ -19,15 +19,22 @@
   text-decoration: none;
   width: 86px;
   height: 35px;
-  //background: red;
   display: flex;
   align-items: center;
   justify-content: center;
-  //color: #fff;
   position: relative;
   padding: 25px 0 19px;
   margin: 0 auto;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
 
 .page-header__nav-wrapper--nojs {
   display: block;
@@ -109,13 +116,6 @@
   min-height: 53px;
   padding: 0;
   border-bottom: 1px solid #ececec;
-
-  //&--menu {
-  //  display: flex;
-  //  align-items: center;
-  //  justify-content: center;
-  //  min-height: 80px;
-  //}
 
   &--catalog {
     padding: 0;

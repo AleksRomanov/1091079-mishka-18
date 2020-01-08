@@ -55,6 +55,22 @@
     background-image: url("../img/icon-play.svg");
     background-size: cover;
     border: none;
+    background-color: transparent;
+  }
+
+  & .manufacture__wrapper-play:hover {
+    width: 121px;
+    height: 92px;
+    //border-radius: 25px;
+    background-color: transparent;
+  }
+
+  & .manufacture__wrapper-play:active {
+    width: 81px;
+    height: 62px;
+    //border-radius: 25px;
+    background-color: transparent;
+    opacity: 0.3;
   }
 }
 
@@ -86,6 +102,10 @@
 
   &--play {
     background-color: $accent;
+  }
+
+  &:active span {
+    opacity: 0.3;
   }
 }
 

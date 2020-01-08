@@ -58,10 +58,23 @@
 
   .contacts__e-mail {
     text-decoration: none;
+
+    &:hover {
+      color: $accent;
+    }
+
+    &:active {
+      color: $accent;
+      opacity: 0.3;
+    }
   }
 
   &--email {
     border-bottom: 1px solid $accent;
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 
   span {
@@ -84,6 +97,10 @@
   text-decoration: none;
   margin-bottom: 30px;
   min-height: 52px;
+
+  &:active span {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map-wrapper {
