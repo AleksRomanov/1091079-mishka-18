@@ -217,6 +217,7 @@
     margin: 0 auto;
     padding: 0 50px;
     padding-bottom: 87px;
+    box-sizing: border-box;
 
     &::before {
       position: absolute;

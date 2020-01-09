@@ -1,6 +1,5 @@
 .nice-things {
-  display: flex;
-  flex-wrap: wrap;
+  padding-top: 70px;
   position: relative;
   background-color: #fafafa;
   color: black;
@@ -10,7 +9,7 @@
   background-position-y: -18px;
   background-size: 575px 373px;
   background-repeat: no-repeat;
-  min-height: 488px;
+  min-height: 418px;
 
   .nice-things__background-image {
     position: absolute;
@@ -19,6 +18,28 @@
     width: 100%;
     height: auto;
   }
+}
+
+.nice-things__title {
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+  color: #010000;
+  margin: 0 auto;
+  margin-bottom: 122px;
+  z-index: 2;
+}
+
+.nice-things__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  width: 100%;
+}
+
+.nice-things__link-text {
+  padding: 25px 0 0 28px;
 }
 
 .nice-things__catalog {
@@ -32,10 +53,6 @@
   min-height: 103px;
   width: 100%;
 
-  &:hover {
-    min-height: 124px;
-  }
-
   &--darker {
     background-color: #56c3b2;
   }
@@ -44,10 +61,11 @@
 .nice-things__link {
   color: #ffffff;
   text-decoration: none;
-  display: flex;
-  align-items: center;
+  display: block;
+  //align-items: center;
   height: 100%;
-  padding-left: 30px;
+  min-height: 103px;
+  //padding-left: 30px;
 
   &:hover::before {
     opacity: 0.7;
@@ -63,6 +81,8 @@
     font-size: 19px;
     line-height: 24px;
     margin-bottom: 3px;
+    width: 111px;
+    display: block;
   }
 
   &::before {
@@ -84,36 +104,9 @@
   }
 }
 
-.nice-things__title {
-  text-align: center;
-  font-size: 27px;
-  line-height: 30px;
-  color: #010000;
-  margin: 0 auto;
-  margin-top: 70px;
-  z-index: 2;
-}
-
 .nice-things__title-content {
   display: inline-block;
   width: 259px;
-}
-
-.nice-things__list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  width: 100%;
-  margin-top: auto;
-  //min-height: 206px;
-}
-
-.nice-things__link-text {
-  width: 111px;
-  display: block;
 }
 
 .nice-things__image {
@@ -127,10 +120,10 @@
     background-position: center;
     background-position-y: 0;
     background-size: 1150px 746px;
-    padding: 0 50px 15px;
+    padding: 0 50px 12px;
     position: relative;
-    min-height: 744px;
-    margin: 0;
+    min-height: 733px;
+    margin: 0 0 12px;
     background-color: #fafafa;
     background-repeat: no-repeat;
 
@@ -138,9 +131,10 @@
       position: absolute;
       content: "";
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: round;
+      background-repeat: repeat;
+      background-size: contain;
       left: 0;
-      bottom: 3px;
+      bottom: -11px;
       width: 100%;
       height: 24px;
       z-index: 2;
@@ -149,7 +143,7 @@
 
   .nice-things__title {
     margin: 0 auto;
-    padding: 152px 0 122px;
+    padding: 152px 0 373px;
     font-size: 43px;
     line-height: 50px;
     font-weight: 700;
@@ -166,24 +160,37 @@
 
   .nice-things__list {
     display: flex;
-    align-self: flex-end;
     margin: 0;
+    position: absolute;
+    bottom: 1px;
+    width: 87%;
   }
 
   .nice-things__item {
     width: 50%;
     min-height: 119px;
+    align-self: flex-end;
+  }
+
+  .nice-things__item--light:hover,
+  .nice-things__item--darker:hover {
+    min-height: 124px;
   }
 
   .nice-things__link {
-    display: flex;
-    align-items: center;
     width: 100%;
     height: 100%;
-    padding-left: 35px;
+    //padding: 28px 0 0 36px;
     color: #ffffff;
+    display: block;
+
+    &--interior::before {
+      right: 34px;
+      top: 2px;
+    }
 
     .nice-things__link-text {
+      padding: 28px 0 0 36px;
       font-weight: 700;
       font-size: 20px;
       line-height: 30px;
@@ -198,7 +205,9 @@
     background-size: 1150px 746px;
     background-repeat: no-repeat;
     margin: 0 auto;
-    margin-bottom: 105px;
+    margin-bottom: 108px;
+    min-height: 756px;
+    box-sizing: border-box;
 
     &::before {
       display: none;
