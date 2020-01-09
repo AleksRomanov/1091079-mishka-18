@@ -183,6 +183,14 @@
     padding-left: 35px;
     color: #ffffff;
 
+    &--interior::before {
+      top: 2px;
+      right: 34px;
+      width: 60px;
+      height: 100%;
+      background-image: url("../img/icon-toy.svg");
+    }
+
     .nice-things__link-text {
       font-weight: 700;
       font-size: 20px;
