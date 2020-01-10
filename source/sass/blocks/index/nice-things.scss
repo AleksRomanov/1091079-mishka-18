@@ -168,6 +168,16 @@
     display: flex;
     align-self: flex-end;
     margin: 0;
+
+    & li {
+      display: flex;
+      align-self: flex-end;
+    }
+
+    & a {
+      box-sizing: border-box;
+      padding-top: 28px;
+    }
   }
 
   .nice-things__item {
