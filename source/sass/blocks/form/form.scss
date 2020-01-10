@@ -209,13 +209,32 @@
     line-height: 18px;
     font-weight: 500;
     list-style: none;
-    color: $black;
-    opacity: 0.3;
+    //opacity: 0.3;
     width: 100%;
     padding: 0;
     padding-bottom: 14px;
     border: none;
-    border-bottom: 2px solid $black;
+    border-bottom: 2px solid black;
+
+    &::-webkit-input-placeholder { /* Chrome */
+      color: $black;
+      opacity: 0.3;
+    }
+
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: $black;
+      opacity: 0.3;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: $black;
+      opacity: 0.3;
+    }
+
+    &:-moz-placeholder { /* Firefox 4 - 18 */
+      color: $black;
+      opacity: 0.3;
+    }
   }
 
   & input:hover {
@@ -244,18 +263,56 @@
     line-height: 8px;
     font-weight: 400;
     margin-left: -3px;
+    border: none;
+    border-bottom: 2px solid $black;
+    width: 260px;
+
+    &::-webkit-input-placeholder { /* Chrome */
+      color: $black;
+      opacity: 0.3;
+    }
+
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: $black;
+      opacity: 0.3;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: $black;
+      opacity: 0.3;
+    }
+
+    &:-moz-placeholder { /* Firefox 4 - 18 */
+      color: $black;
+      opacity: 0.3;
+    }
+  }
+
+  & label:hover input {
+    //border-color: $accent;
+    border: none;
+    opacity: 1;
+    //border-bottom: 2px solid $accent;
   }
 
   & input:hover {
-    outline: none;
+    //border-color: $accent;
+    //opacity: 1;
+    //outline: none;
     border: none;
-    border-color: $accent;
+    border-bottom: 2px solid $accent;
+  }
+
+  & input:focus-within {
+    //border-color: $accent;
+    opacity: 1;
+    outline: none;
   }
 
   & .form__input-wrapper {
     margin: 0;
     margin-bottom: 21px;
-    border-bottom: 2px solid $black;
+
   }
 }
 
@@ -277,11 +334,16 @@
     width: 100%;
   }
 
+  & input:hover {
+    border-color: $accent;
+    opacity: 1;
+    outline: none;
+  }
+
   & input:focus-within {
     border-color: $accent;
     opacity: 1;
     outline: none;
-    color: black;
   }
 
   & .form__input-wrapper {
@@ -523,12 +585,17 @@
       margin-left: 14px;
     }
 
+    & label:hover input,
+    & label:focus input {
+      border-bottom: 2px solid $accent;
+    }
+
     & .form__input-wrapper {
       margin: 0;
       margin-bottom: 23px;
       padding: 0;
       margin-top: -7px;
-      border-bottom: 2px solid #444444;
+      //border-bottom: 2px solid #444444;
       min-width: 428px;
     }
 
