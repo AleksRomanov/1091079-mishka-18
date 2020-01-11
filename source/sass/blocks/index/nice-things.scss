@@ -218,6 +218,9 @@
     background-repeat: no-repeat;
     margin: 0 auto;
     margin-bottom: 105px;
+    box-sizing: border-box;
+    min-height: 758px;
+
 
     &::before {
       display: none;

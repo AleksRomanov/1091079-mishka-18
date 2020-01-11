@@ -342,6 +342,12 @@
     margin-top: auto;
     position: relative;
     padding-left: 0;
+
+    & svg {
+      top: 21px;
+      right: -5px;
+      position: absolute;
+    }
   }
 
   .catalog__item-price {

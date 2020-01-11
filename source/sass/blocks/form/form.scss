@@ -26,7 +26,7 @@
     font-weight: 400;
     list-style: none;
     color: $black;
-    margin-bottom: 21px;
+    margin-bottom: 24px;
   }
 }
 
@@ -54,7 +54,7 @@
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 
   & .form__order-radio:focus + label {
     opacity: 0.3;
@@ -72,7 +72,7 @@
 
   & ul {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
     padding: 0;
     list-style: none;
   }
@@ -88,24 +88,28 @@
 
   & span {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     font-size: 17px;
     line-height: 16px;
     font-weight: 700;
     list-style: none;
     color: $accent;
-    min-width: 63px;
+    //min-width: 63px;
     margin-bottom: 32px;
     text-transform: uppercase;
 
-    &::before {
-      position: absolute;
+    &::after {
+      //position: absolute;
       content: "";
-      width: 60vw;
+      //width: 60vw;
+      display: block;
+      flex-grow: 1;
+      margin-left: 20px;
       height: 1px;
       background-color: $accent;
-      left: 100%;
-      top: 50%;
+      //left: 100%;
+      //top: 50%;
     }
   }
 
@@ -225,7 +229,7 @@
 
   & label {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 
   & .form__input-wrapper {
@@ -282,7 +286,7 @@
   margin-bottom: 8px;
 
   & span {
-    margin-bottom: 15px;
+    margin-bottom: -9px;
   }
 
   & input {
@@ -347,7 +351,7 @@
   margin-bottom: 8px;
 
   & span {
-    margin-bottom: 20px;
+    margin-bottom: 1px;
   }
 
   & input {
@@ -383,7 +387,7 @@
   margin-bottom: 8px;
 
   & span {
-    margin-bottom: 25px;
+    margin-bottom: 6px;
   }
 }
 
@@ -467,7 +471,7 @@
     margin: 0;
 
     & input {
-      width: 375px;
+      width: 100%;
       border-bottom: 2px solid black;
     }
 
@@ -585,15 +589,16 @@
     & label {
       font-size: 19px;
       line-height: 18px;
-      max-width: 74px;
+      //max-width: 74px;
+      width: auto;
     }
 
     & .form__order-list-item--surname label {
-      max-width: 126px;
+      width: auto;
     }
 
     & .form__order-list-item--middlename label {
-      max-width: 126px;
+      width: auto;
     }
 
     & input {
@@ -612,8 +617,10 @@
     & .form__input-wrapper {
       margin: 0;
       margin-bottom: 23px;
+      margin-left: 41px;
       padding: 0;
       margin-top: -7px;
+      flex-grow: 1;
       //border-bottom: 2px solid #444444;
       //min-width: 428px;
     }
