@@ -56,9 +56,9 @@
   padding: 0;
   margin-bottom: 20px;
 
-  & .form__order-radio:focus + label {
-    opacity: 0.3;
-  }
+  //& .form__order-radio:focus + label {
+  //  opacity: 0.3;
+  //}
 
   & label {
     font-size: 17px;
@@ -153,8 +153,8 @@
 }
 
 .form__order-blank--types {
-  & input {
-    display: none;
+  & input:focus + label::before {
+    border-color: $accent;
   }
 
   & input + label::before {
@@ -188,8 +188,8 @@
     margin-bottom: 39px;
   }
 
-  & input {
-    display: none;
+  & input:focus + label::before {
+    border-color: $accent;
   }
 
   & input + label::before {
@@ -760,8 +760,8 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    width: 1150px;
-    margin: 0 auto;
+    //width: 1150px;
+    //margin: 0 auto;
   }
 
   .form__title-box {
@@ -800,7 +800,9 @@
   }
 
   .form__order-blank {
-    padding-left: 226px;
+    padding: 0 20%;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 
   .form__order-blank--types {
@@ -828,7 +830,6 @@
   }
 
   .form__order-blank--colors {
-    margin: 0;
     padding-top: 58px;
 
     & .form__order-description {
