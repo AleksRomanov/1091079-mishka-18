@@ -212,7 +212,7 @@
 }
 
 .form__order-blank--names {
-  margin-bottom: 6px;
+  margin-bottom: 9px;
 
   & span {
     margin-bottom: 29px;
@@ -238,10 +238,9 @@
     line-height: 18px;
     font-weight: 500;
     list-style: none;
-    //opacity: 0.3;
     width: 100%;
     padding: 0;
-    padding-bottom: 14px;
+    padding-bottom: 15px;
     border: none;
     border-bottom: 2px solid black;
 
@@ -287,7 +286,7 @@
   }
 
   & input {
-    padding-bottom: 11px;
+    padding-bottom: 15px;
     font-size: 19px;
     line-height: 8px;
     font-weight: 400;
@@ -340,7 +339,7 @@
 
   & .form__input-wrapper {
     margin: 0;
-    margin-bottom: 21px;
+    margin-bottom: 24px;
   }
 }
 
@@ -580,7 +579,7 @@
       display: flex;
       margin-bottom: 17px;
       padding: 0;
-      //min-width: 500px;
+      width: 500px;
     }
 
     & label {
@@ -601,8 +600,8 @@
       font-size: 19px;
       padding: 0;
       padding-bottom: 15px;
-      padding-left: 14px;
-      min-width: 428px;
+      //margin-left: 14px;
+      //min-width: 428px;
     }
 
     & label:hover input,
