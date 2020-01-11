@@ -175,10 +175,12 @@
     opacity: 0.2;
   }
 
+  &:focus-within span,
   &:hover span {
     opacity: 0.6;
   }
 
+  &:focus-within svg,
   &:hover svg {
     fill: $accent;
     opacity: 1;
