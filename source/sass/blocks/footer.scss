@@ -28,6 +28,7 @@
   padding-bottom: 22px;
   //width: 80%;
 
+  & .footer__socials-list:focus-within svg,
   & .footer__socials-list:hover svg {
     fill: $accent;
     opacity: 1;
@@ -46,6 +47,10 @@
   text-decoration: none;
   color: #000000;
   padding: 16px 0 20px 0;
+
+  & .footer__developer:focus span {
+    opacity: 0.6;
+  }
 
   .developer__logo {
     padding: 0;

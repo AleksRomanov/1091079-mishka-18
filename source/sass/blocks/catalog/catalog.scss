@@ -98,6 +98,11 @@
   max-width: 260px;
   margin: 0 auto;
 
+  & .catalog__item-button {
+    margin-right: -10px;
+    margin-top: -3px;
+  }
+
   &:hover svg {
     fill: $accent;
     opacity: 1;
