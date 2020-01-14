@@ -101,6 +101,7 @@
   & .catalog__item-button {
     margin-right: -10px;
     margin-top: -3px;
+    opacity: 0.2;
   }
 
   &:hover svg {
@@ -135,7 +136,7 @@
       position: absolute;
       content: "";
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       background-size: contain;
       //background-position: bottom;
       bottom: -1px;
@@ -347,10 +348,12 @@
     margin-top: auto;
     position: relative;
     padding-left: 0;
+    display: flex;
+    align-items: center;
 
     & svg {
-      top: 21px;
-      right: -5px;
+      top: -2px;
+      right: 3px;
       position: absolute;
     }
   }
@@ -362,5 +365,12 @@
     //font-weight: 700;
     //text-decoration: none;
     //color: #000000;
+  }
+
+  .catalog__item-button {
+    width: 22px;
+    height: 19px;
+    margin: 0;
+    position: relative;
   }
 }

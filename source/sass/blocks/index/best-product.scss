@@ -223,14 +223,14 @@
       position: absolute;
       content: "";
       background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       background-position: center;
-      background-size: cover;
+      background-size: 100% 23px;
       left: 50%;
       transform: translateX(-50%);
-      bottom: 0;
-      width: 90%;
-      height: 24px;
+      bottom: -3px;
+      width: 1050px;
+      height: 23px;
       z-index: 2;
     }
   }

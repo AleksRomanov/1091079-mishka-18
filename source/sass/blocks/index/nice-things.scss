@@ -242,17 +242,22 @@
 
   .nice-things__item {
     position: relative;
+  }
 
+  .nice-things__list {
     &::before {
       position: absolute;
       content: "";
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: no-repeat;
       left: 0;
-      bottom: -16px;
+      bottom: -4px;
       width: 100%;
       height: 34px;
       z-index: 2;
+      background-size: 1250px auto;
+      background-position: -50px;
     }
   }
 }
+

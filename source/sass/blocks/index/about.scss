@@ -148,6 +148,10 @@
       line-height: 22px;
     }
 
+    &--flower::before {
+      margin-bottom: 16px;
+    }
+
     &--skein {
       order: 1;
     }
@@ -197,6 +201,11 @@
       font-size: 20px;
       line-height: 22px;
     }
+
+    &--gift::before {
+      margin-bottom: 19px;
+      margin-top: -4px;
+    }
   }
 
   .about__item-text {
@@ -219,8 +228,17 @@
       width: 68%;
     }
 
+    &--heart::before {
+      margin-top: 3px;
+    }
+
     &--money::before {
       margin-bottom: 23px;
+    }
+
+    &--gift::before {
+      margin-bottom: 21px;
+      margin-top: 0;
     }
   }
 
