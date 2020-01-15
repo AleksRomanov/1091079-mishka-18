@@ -874,8 +874,8 @@
 
     & .form__order-description {
       position: absolute;
-      top: 9px;
-      left: -114px;
+      top: 1px;
+      left: 113px;
     }
 
     & li {
@@ -905,6 +905,7 @@
     padding-left: 225px;
     margin-bottom: 66px;
     max-width: 1150px;
+    position: relative;
 
     & ul {
       min-width: 790px;
@@ -920,6 +921,18 @@
       left: -114px;
     }
   }
+
+  //.form__order-blank--colors {
+  //  &::before {
+  //    width: calc((200vw - 960px) * 2);
+  //    height: 228px;
+  //    background-color: #f1f1f1;
+  //    top: 0;
+  //    left: -50%;
+  //    position: absolute;
+  //    content: "";
+  //  }
+  //}
 
   .form__order-blank--names {
     padding-left: 226px;
@@ -956,6 +969,19 @@
 
   .form__order-blank--phone {
     padding: 36px 0 0 225px;
+    box-sizing: border-box;
+
+    &::before {
+      &::before {
+        width: calc((200vw - 960px) * 2);
+        height: 228px;
+        background-color: #f1f1f1;
+        top: 0;
+        left: -50%;
+        position: absolute;
+        content: "";
+      }
+    }
 
     & input {
       padding-bottom: 12px;
@@ -1021,7 +1047,7 @@
 
     & textarea {
       margin-bottom: 0;
-      width: 60.9vw;
+      width: 700px;
     }
   }
 
