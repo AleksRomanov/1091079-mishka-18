@@ -252,7 +252,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    width: 1150px;
+    width: 100%;
     margin: 0 auto;
     margin-top: -58px;
   }
@@ -265,8 +265,8 @@
 
     &::before {
       background-repeat: repeat;
-      background-size: cover;
-      width: 100%;
+      background-size: contain;
+      background-position: center;
       height: 34px;
       bottom: -15px;
       z-index: 2;
@@ -279,9 +279,9 @@
   }
 
   .catalog__list-box {
-    width: 100%;
-    /* margin: 0; */
+    width: 1150px;
     padding: 0 50px;
+    box-sizing: border-box;
   }
 
   .catalog__list {
