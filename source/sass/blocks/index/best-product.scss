@@ -132,6 +132,7 @@
   .best-product__info-wrapper {
     width: 100%;
     margin-bottom: 32px;
+    margin-left: 4px;
   }
 
   .best-product__info-wrapper-title {
@@ -146,7 +147,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
   }
 
   .best-product__table-wrapper {
@@ -223,14 +224,13 @@
       position: absolute;
       content: "";
       background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat: repeat;
+      background-repeat: no-repeat;
       background-position: center;
-      background-size: 100% 23px;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 2%;
+      transform: translateX(-4%);
       bottom: -3px;
-      width: 1050px;
-      height: 23px;
+      height: 24px;
+      background-size: 1050px auto;
       z-index: 2;
     }
   }

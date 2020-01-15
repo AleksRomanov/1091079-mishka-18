@@ -224,13 +224,14 @@
     margin-bottom: 105px;
 
     &::before {
-      background-size: cover;
-      left: 50%;
-      transform: translateX(-50%);
-      top: -13px;
-      width: 90%;
-      height: 26px;
-      z-index: 2;
+      background-repeat: no-repeat;
+      background-position: center;
+      left: 2%;
+      transform: translateX(-4%);
+      bottom: 1px;
+      top: -10px;
+      height: 24px;
+      background-size: 1050px 24px;
     }
 
     &::after {
