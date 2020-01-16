@@ -106,7 +106,7 @@
   }
 }
 
-.page-nav__item {
+.page-header__nav-item {
   text-align: center;
   margin: 0;
   width: 100%;
@@ -147,13 +147,13 @@
   }
 }
 
-.page-nav__item-cart-text,
-.page-nav__item-search-text {
+.page-header__nav-item-cart-text,
+.page-header__nav-item-search-text {
   margin-left: 20px;
 }
 
-.page-nav__item.page-nav__item--arrivals,
-.page-nav__item.page-nav__item--sail {
+.page-header__nav-item.page-header__nav-item--arrivals,
+.page-header__nav-item.page-header__nav-item--sail {
   display: none;
 }
 
@@ -226,13 +226,13 @@
     //padding: 0 30px;
   }
 
-  .page-nav__item,
-  .page-nav__item--cart {
+  .page-header__nav-item,
+  .page-header__nav-item--cart {
     border: none;
   }
 
-  .page-nav__item-cart-text,
-  .page-nav__item-search-text {
+  .page-header__nav-item-cart-text,
+  .page-header__nav-item-search-text {
     margin-left: 26px;
   }
 
@@ -270,7 +270,7 @@
     }
   }
 
-  .page-nav__item {
+  .page-header__nav-item {
     display: flex;
     align-items: center;
     order: 0;
@@ -316,6 +316,8 @@
       position: relative;
       width: 34.9%;
       order: 2;
+      padding-right: 0;
+      margin-left: auto;
 
       & svg {
         padding: 0;
@@ -335,41 +337,37 @@
       text-align: center;
     }
 
-    &--delivery .page-nav__item-cart-text {
+    &--delivery .page-header__nav-item-cart-text {
       letter-spacing: -0.5px;
       margin-left: 40px;
     }
   }
 
-  .page-nav__item-delivery-text {
+  .page-header__nav-item-delivery-text {
     letter-spacing: -0.6px;
     margin-left: 42px;
   }
 
-  .page-nav__item--catalog,
-  .page-nav__item--form,
-  .page-nav__item--delivery {
+  .page-header__nav-item--catalog,
+  .page-header__nav-item--form,
+  .page-header__nav-item--delivery {
     min-height: 60px;
   }
 
-  .page-nav__item--form a,
-  .page-nav__item--catalog a {
+  .page-header__nav-item--form a,
+  .page-header__nav-item--catalog a {
     margin: 0;
     font-size: 15px;
   }
 
-  .page-nav__item.page-nav__item--cart {
+  .page-header__nav-item.page-header__nav-item--cart {
     padding: 0;
     justify-content: flex-end;
     margin-left: auto;
   }
 
-  .page-nav__item--menu {
-    height: 0;
-  }
-
   .page-header__logo-image,
-  .page-nav__item-search-text,
+  .page-header__nav-item-search-text,
   .page-header__toogle {
     display: none;
 
@@ -431,7 +429,7 @@
     border: none;
   }
 
-  .page-nav__item {
+  .page-header__nav-item {
     order: 3;
     max-width: 1150px;
     margin: 0 auto;
@@ -500,13 +498,13 @@
     }
   }
 
-  .page-nav__item--catalog,
-  .page-nav__item--form {
+  .page-header__nav-item--catalog,
+  .page-header__nav-item--form {
     min-height: 88px;
   }
 
-  .page-nav__item--form a,
-  .page-nav__item--catalog a {
+  .page-header__nav-item--form a,
+  .page-header__nav-item--catalog a {
     font-size: 17px;
   }
 
@@ -539,29 +537,29 @@
     height: 72px;
   }
 
-  .page-nav__item.page-nav__item--delivery {
+  .page-header__nav-item.page-header__nav-item--delivery {
     margin-left: auto;
   }
 
-  .page-nav__item.page-nav__item--arrivals,
-  .page-nav__item.page-nav__item--sail {
+  .page-header__nav-item.page-header__nav-item--arrivals,
+  .page-header__nav-item.page-header__nav-item--sail {
     display: flex;
     min-height: 58px;
   }
 
-  .page-nav__item--arrivals a,
-  .page-nav__item--sail a {
+  .page-header__nav-item--arrivals a,
+  .page-header__nav-item--sail a {
     font-size: 15px;
     margin: 0;
   }
 
-  .page-nav__item-cart-text {
+  .page-header__nav-item-cart-text {
     font-size: 17px;
     line-height: 24px;
     min-width: 234px;
   }
 
-  .page-nav__item-delivery-text {
+  .page-header__nav-item-delivery-text {
     letter-spacing: -0.5px;
     margin-left: 55px;
   }
