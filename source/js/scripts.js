@@ -23,10 +23,9 @@ function initMap() {
 }
 
 // var navMain = document.querySelector(".page-header__nav-wrapper");
-// var navToggle = document.querySelector(".page-header__toggle--js");
+// var navToggle = document.querySelector(".page-header__toggle");
 //
 // navMain.classList.remove("page-header__nav-wrapper");
-// // navToggle.classList.remove("page-header__toggle--js");
 //
 // navToggle.addEventListener("click", function () {
 //   if (navToggle.classList.contains("page-header__toggle--closed")) {
