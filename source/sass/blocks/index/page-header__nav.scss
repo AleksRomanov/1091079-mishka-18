@@ -203,6 +203,16 @@
   .page-header--opened .page-header__nav-item--delivery {
     display: none;
   }
+
+  .page-header--nojs .page-header__nav-item--sail,
+  .page-header--opened .page-header__nav-item--sail {
+    display: none;
+  }
+
+  .page-header--nojs .page-header__nav-item--arrivals,
+  .page-header--opened .page-header__nav-item--arrivals {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
