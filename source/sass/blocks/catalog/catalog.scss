@@ -351,9 +351,14 @@
     display: flex;
     align-items: center;
 
+    & .catalog__item-button {
+      margin-right: -6px;
+      margin-top: -10px;
+    }
+
     & svg {
-      top: -2px;
-      right: 3px;
+      top: 0;
+      right: 0;
       position: absolute;
     }
   }
@@ -361,10 +366,6 @@
   .catalog__item-price {
     margin: 0;
     font-size: 17px;
-    //line-height: 24px;
-    //font-weight: 700;
-    //text-decoration: none;
-    //color: #000000;
   }
 
   .catalog__item-button {
