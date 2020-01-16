@@ -1,25 +1,29 @@
 function initMap() {
-  var o = {
-    lat: 59.93945,
-    lng: 30.3295
-  }
-    , e = {
-    lat: 59.93877,
-    lng: 30.32318
-  }
-    , t = new google.maps.Map(document.getElementById("map"), {
-    zoom: 16,
-    center: o,
-    disableDefaultUI: !0
-  });
+
+  var coordX = 59.938836;
+  var coordY = 30.323035;
+  var markerWidth = 67;
+  var markerHeight = 100;
+  var zoomScale = 16.0;
+  var markerX = 59.938770;
+  var markerY = 30.323180;
+
+
+  var coordinates = {lat: coordX, lng: coordY};
+  var coordinatesMarker = {lat: markerX, lng: markerY};
+
+  var map = new google.maps.Map(
+    document.getElementById('map'), {zoom: zoomScale, center: coordinates, disableDefaultUI: true});
+
+
   new google.maps.Marker({
-    position: e,
-    map: t,
+    position: coordinatesMarker,
+    map: map,
     icon: {
-      url: "img/icon/pin.svg",
-      scaledSize: new google.maps.Size(80, 140)
+      url: "img/icon-map-pin.svg",
+      scaledSize: new google.maps.Size(markerWidth, markerHeight)
     }
-  })
+  });
 }
 
 var navMain = document.querySelector(".page-header");
@@ -36,16 +40,6 @@ navToggle.addEventListener("click", function () {
     navMain.classList.remove("page-header--opened");
   }
 });
-//
-// navToggle.addEventListener("click", function () {
-//   if (navMain.classList.contains("page-header__nav-wrapper--closed")) {
-//     navMain.classList.remove("page-header__nav-wrapper--closed");
-//     navMain.classList.add("page-header__nav-wrapper--opened");
-//   } else {
-//     navMain.classList.add("page-header__nav-wrapper--closed");
-//     navMain.classList.remove('page-header__nav-wrapper--opened');
-//   }
-// });
 
 var link = document.querySelector(".best-product__button");
 var popup = document.querySelector(".popup");
