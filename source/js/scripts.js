@@ -5,8 +5,8 @@ function initMap() {
   var markerWidth = 67;
   var markerHeight = 100;
   var zoomScale = 16.0;
-  var markerX = 59.938770;
-  var markerY = 30.323180;
+  var markerX = 59.938836;
+  var markerY = 30.323035;
 
 
   var coordinates = {lat: coordX, lng: coordY};
