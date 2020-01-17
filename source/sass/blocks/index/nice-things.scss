@@ -5,7 +5,7 @@
   background-color: #fafafa;
   color: black;
   margin: 0 auto;
-  background-image: url("../img/hero-mobile@1x.jpg");
+  background-image: url("../img/hero-mobile@2x.jpg");
   background-position: center;
   background-position-y: -18px;
   background-size: 575px 373px;
@@ -75,6 +75,7 @@
     background-image: url("../img/icon-interior.svg");
     right: 26px;
     background-position: 50% 50%;
+    opacity: 0.5;
   }
 
   &--interior::before {
@@ -123,7 +124,7 @@
 
 @media (min-width: $tablet-width) {
   .nice-things {
-    background-image: url("../img/hero-tablet@1x.jpg");
+    background-image: url("../img/hero-tablet@2x.jpg");
     background-position: center;
     background-position-y: 0;
     background-size: 1150px 746px;
@@ -168,6 +169,16 @@
     display: flex;
     align-self: flex-end;
     margin: 0;
+
+    & li {
+      display: flex;
+      align-self: flex-end;
+    }
+
+    & a {
+      box-sizing: border-box;
+      padding-top: 28px;
+    }
   }
 
   .nice-things__item {
@@ -202,11 +213,14 @@
 @media (min-width: $desktop-width) {
   .nice-things {
     max-width: 1150px;
-    background-image: url("../img/hero-desktop@1x.jpg");
+    background-image: url("../img/hero-desktop@2x.jpg");
     background-size: 1150px 746px;
     background-repeat: no-repeat;
     margin: 0 auto;
     margin-bottom: 105px;
+    box-sizing: border-box;
+    min-height: 758px;
+
 
     &::before {
       display: none;
@@ -228,17 +242,21 @@
 
   .nice-things__item {
     position: relative;
+  }
 
+  .nice-things__list {
     &::before {
       position: absolute;
       content: "";
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: no-repeat;
       left: 0;
-      bottom: -16px;
+      bottom: -4px;
       width: 100%;
       height: 34px;
       z-index: 2;
+      background-size: 1250px auto;
+      background-position: -50px;
     }
   }
 }

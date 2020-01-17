@@ -14,7 +14,8 @@
   line-height: 18px;
   font-weight: 700;
   list-style: none;
-  margin-right: 16px;
+  margin: 0 22px 0 -31px;
+  //margin: 0 -21px 0 -36px;
 }
 
 .footer__socials-list-wrapper {
@@ -28,6 +29,7 @@
   padding-bottom: 22px;
   //width: 80%;
 
+  & .footer__socials-list:focus-within svg,
   & .footer__socials-list:hover svg {
     fill: $accent;
     opacity: 1;
@@ -39,13 +41,27 @@
   }
 }
 
+.footer__socials-item:hover svg {
+  fill: $accent;
+  opacity: 1;
+}
+
 .footer__developer {
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   align-items: center;
   text-decoration: none;
   color: #000000;
-  padding: 16px 0 20px 0;
+  padding: 14px 0 20px 0;
+  margin-left: 37px;
+
+  & svg {
+    margin-top: 4px;
+  }
+
+  & .footer__developer:focus span {
+    opacity: 0.6;
+  }
 
   .developer__logo {
     padding: 0;
@@ -68,7 +84,7 @@
 }
 
 .developer__copyright {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -87,6 +103,10 @@
     padding: 0;
   }
 
+  .footer__developer-title {
+    margin: 0 22px 0 0;
+  }
+
   .footer-wrapper {
     padding: 0 50px;
     display: flex;
@@ -97,29 +117,33 @@
 
   .footer__developer {
     padding: 0;
-    //padding: 16px 0 20px 0;
+    margin-left: -1px;
 
     .developer__logo {
       width: 42px;
       height: auto;
       object-position: 6px 2px;
     }
+
+    & svg {
+      margin-top: 7px;
+    }
   }
 
   .footer__logo {
     display: inline-block;
 
-    & .footer__logo-image:hover {
+    & svg:hover {
       fill: $accent;
       opacity: 1;
     }
 
-    & .footer__logo-image:active {
+    & svg:active {
       opacity: 0.3;
       fill: $accent;
     }
 
-    .footer__logo-image {
+    svg {
       width: 102px;
       height: auto;
     }

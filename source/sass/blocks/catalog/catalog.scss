@@ -98,6 +98,12 @@
   max-width: 260px;
   margin: 0 auto;
 
+  & .catalog__item-button {
+    margin-right: -10px;
+    margin-top: -3px;
+    opacity: 0.2;
+  }
+
   &:hover svg {
     fill: $accent;
     opacity: 1;
@@ -130,7 +136,7 @@
       position: absolute;
       content: "";
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       background-size: contain;
       //background-position: bottom;
       bottom: -1px;
@@ -246,7 +252,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    width: 1150px;
+    width: 100%;
     margin: 0 auto;
     margin-top: -58px;
   }
@@ -259,8 +265,8 @@
 
     &::before {
       background-repeat: repeat;
-      background-size: cover;
-      width: 100%;
+      background-size: contain;
+      background-position: center;
       height: 34px;
       bottom: -15px;
       z-index: 2;
@@ -273,9 +279,9 @@
   }
 
   .catalog__list-box {
-    width: 100%;
-    /* margin: 0; */
+    width: 1150px;
     padding: 0 50px;
+    box-sizing: border-box;
   }
 
   .catalog__list {
@@ -342,14 +348,30 @@
     margin-top: auto;
     position: relative;
     padding-left: 0;
+    display: flex;
+    align-items: center;
+
+    & .catalog__item-button {
+      margin-right: -6px;
+      margin-top: -10px;
+    }
+
+    & svg {
+      top: 0;
+      right: 0;
+      position: absolute;
+    }
   }
 
   .catalog__item-price {
     margin: 0;
     font-size: 17px;
-    //line-height: 24px;
-    //font-weight: 700;
-    //text-decoration: none;
-    //color: #000000;
+  }
+
+  .catalog__item-button {
+    width: 22px;
+    height: 19px;
+    margin: 0;
+    position: relative;
   }
 }

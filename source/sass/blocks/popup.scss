@@ -5,7 +5,6 @@
   position: fixed;
   z-index: 100;
   top: 0;
-
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -13,10 +12,130 @@
   transform: translateY(50%);
   top: 50%;
   margin: 0 auto;
-  max-width: 300px;
-  min-height: 340px;
+  background-color: #ffffff;
+  height: 336px;
+  box-sizing: border-box;
+  padding: 28px 30px 0 30px;
+  border-top: 2px solid #c7c7c7;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+
+  & .popup__cart-wrapper-size {
+    margin-bottom: 27px;
+    display: block;
+    text-align: center;
+    letter-spacing: -0.5px;
+  }
+
+  & .popup__cart-button-add {
+    min-height: 53px;
+    font-size: 18px;
+    width: 260px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    background-color: $accent;
+  }
+
+  & .popup__cart-button-add span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+}
+
+.popup__cart-list {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-bottom: 30px;
+
+  & li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 108px;
+    margin-right: 3px;
+    margin-left: 5px;
+    min-height: 48px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  & li:first-child {
+    border-color: $accent;
+  }
+
+  & li:active {
+    border-color: $accent;
+  }
+
+  & li:hover {
+    border-color: rgba(68, 68, 68, 0.3);
+    background-color: transparent;
+    color: $black;
+  }
+
+  & .popup__cart-button-s:hover {
+    border-color: $accent;
+  }
 }
 
 .popup-show {
   display: block;
+}
+
+.popup__cart-wrapper-title {
+  text-align: center;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.popup__cart-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .popup {
+    padding: 0;
+  }
+
+  .popup__cart-wrapper {
+    width: 566px;
+    padding-top: 47px;
+
+    & .popup__cart-button-add {
+      width: 350px;
+    }
+
+    & .popup__cart-wrapper-size {
+      margin-bottom: 25px;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .popup__cart-wrapper-title {
+    font-size: 30px;
+    width: 355px;
+    margin-bottom: 31px;
+  }
+
+  .popup__cart-button {
+    width: 351px;
+
+    & button {
+      width: 112px;
+    }
+  }
 }

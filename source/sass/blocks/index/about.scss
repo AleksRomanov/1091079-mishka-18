@@ -148,6 +148,10 @@
       line-height: 22px;
     }
 
+    &--flower::before {
+      margin-bottom: 16px;
+    }
+
     &--skein {
       order: 1;
     }
@@ -197,6 +201,11 @@
       font-size: 20px;
       line-height: 22px;
     }
+
+    &--gift::before {
+      margin-bottom: 22px;
+      margin-top: -4px;
+    }
   }
 
   .about__item-text {
@@ -209,6 +218,7 @@
     max-width: 1150px;
     margin: 0 auto;
     padding: 64px 225px 0;
+    box-sizing: border-box;
   }
 
   .about__item {
@@ -218,8 +228,17 @@
       width: 68%;
     }
 
+    &--heart::before {
+      margin-top: 3px;
+    }
+
     &--money::before {
-      margin-bottom: 23px;
+      margin-bottom: 25px;
+    }
+
+    &--gift::before {
+      margin-bottom: 21px;
+      margin-top: 0;
     }
   }
 
