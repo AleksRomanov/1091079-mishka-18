@@ -255,6 +255,7 @@
 
   .page-header__nav-link--cart {
     margin: 0;
+    margin-top: -5px;
   }
 
 
@@ -264,6 +265,7 @@
     position: relative;
     min-width: 768px;
     box-sizing: border-box;
+    border: none;
 
     &::before {
       position: absolute;
@@ -470,11 +472,13 @@
       order: 4;
       margin: 0;
       width: 8%;
+      height: 88px;
     }
 
     &--cart {
       order: 5;
       width: 25%;
+      height: 88px;
     }
 
     &--catalog {
@@ -486,7 +490,7 @@
     &--delivery {
       order: 8;
       margin: 0;
-      min-width: 287px;
+      min-width: 27.3%;
     }
 
     &--arrivals {
@@ -509,7 +513,7 @@
 
   .page-header__nav-item--catalog,
   .page-header__nav-item--form {
-    min-height: 88px;
+    height: 88px;
   }
 
   .page-header__nav-item--form a,
