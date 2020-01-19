@@ -184,31 +184,14 @@
     margin: 0;
   }
 
-  //.catalog__image-link {
-  //  display: flex;
-  //  font-size: 17px;
-  //  line-height: 24px;
-  //  font-weight: 700;
-  //  text-decoration: none;
-  //  color: #000000;
-  //}
-
   .catalog__image {
     background-image: url("../img/photo-hare-tablet@1x.jpg");
-    //background-size: 334px 334px;
     margin: 0;
     width: 334px;
     height: 334px;
-    max-width: none;
-    //flex-shrink: 0;
   }
 
-  //.catalog__description-wrapper {
-  //  flex-grow: 1;
-  //}
-
   .catalog__item-link {
-    //display: block;
     text-align: left;
     font-size: 20px;
     line-height: 24px;
@@ -224,7 +207,6 @@
     text-decoration: none;
     color: #000000;
     text-align: left;
-    //padding-bottom: 174px;
 
     &::before {
       max-width: 100%;
