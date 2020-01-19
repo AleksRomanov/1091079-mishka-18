@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="preload" as="font" crossorigin="anonymous" href="fonts/opensans.woff2">
+  <link rel="preload" as="font" crossorigin="anonymous" href="fonts/opensansbold.woff2">
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка - Форма</title>
@@ -159,9 +160,9 @@
         <fieldset class="form__order-blank form__order-blank--mail">
           <div class="form__order-blank-wrapper">
             <span class="form__order-description form__order-description--email">E-mail</span>
-            <label class="form__order-label" for="mail"></label>
+            <label class="form__order-label" for="Email"></label>
             <p class="form__input-wrapper">
-              <input class="form__order-input" type="email" id="mail" name="email" placeholder="Ваш Email*" required="">
+              <input class="form__order-input" type="email" id="Email" name="email" placeholder="Ваш Email*" required="">
             </p>
           </div>
         </fieldset>
