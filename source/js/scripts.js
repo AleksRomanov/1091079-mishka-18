@@ -71,7 +71,7 @@ var isClickOutside = function (evt, cssSelector) {
 };
 
 var onSuccessWindowOutsideCLick = function (evt) {
-  if (isClickOutside(evt, '.popup__cart-wrapper')) {
+  if (isClickOutside(evt, ".popup__cart-wrapper")) {
     popup.classList.remove("popup-show");
   }
 };

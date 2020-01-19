@@ -35,12 +35,12 @@
     border: none;
     background-color: $accent;
   }
+}
 
-  & .popup__cart-button-add span {
-    font-size: 18px;
-    font-weight: 500;
-    color: #ffffff;
-  }
+.popup__cart-button-add span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .popup__cart-list {

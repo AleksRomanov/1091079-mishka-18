@@ -27,18 +27,17 @@
   margin: 0;
   border-bottom: 1px solid #dedede;
   padding-bottom: 22px;
-  //width: 80%;
+}
 
-  & .footer__socials-list:focus-within svg,
-  & .footer__socials-list:hover svg {
-    fill: $accent;
-    opacity: 1;
-  }
+.footer__socials-list:focus-within svg,
+.footer__socials-list:hover svg {
+  fill: $accent;
+  opacity: 1;
+}
 
-  & .footer__socials-list:active svg {
-    fill: $accent;
-    opacity: 0.3;
-  }
+.footer__socials-list:active svg {
+  fill: $accent;
+  opacity: 0.3;
 }
 
 .footer__socials-item:hover svg {

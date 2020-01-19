@@ -91,7 +91,6 @@
     font-weight: 700;
     list-style: none;
     color: $accent;
-    //min-width: 63px;
     margin-bottom: 33px;
     text-transform: uppercase;
 
@@ -315,7 +314,6 @@
   }
 
   & label:hover input {
-    //border-color: $accent;
     border: none;
     opacity: 1;
   }
@@ -424,28 +422,38 @@
     text-decoration: none;
     list-style: none;
   }
+}
 
-  & .form__submit-button {
-    min-height: 52px;
+.form__submit-button {
+  min-height: 52px;
+  color: white;
 
-    & span {
-      margin: 0;
-      font-size: 17px;
-      line-height: 16px;
-      font-weight: 700;
-    }
+  & span {
+    margin: 0;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
   }
 
-  & .form__submit-button:hover span {
-    opacity: 0.6;
+  &:hover span {
+    opacity: 1;
     color: white;
   }
 
-  & .form__submit-button:active span {
+  &:active span {
     opacity: 0.3;
     color: white;
   }
 }
+
+.form__submit-button:focus-within {
+  background-color: #444444;
+}
+
+.form__submit-button:focus-within span {
+  color: white;
+}
+
 
 @media (min-width: $tablet-width) {
   .form {
@@ -478,7 +486,6 @@
   }
 
   .form__wrapper {
-    //padding: 0 50px;
     padding: 0;
 
     & .form__title-text {
@@ -626,7 +633,6 @@
     & label {
       font-size: 19px;
       line-height: 18px;
-      //max-width: 74px;
       width: auto;
     }
 
@@ -659,14 +665,6 @@
       margin-top: -7px;
       flex-grow: 1;
     }
-
-    & .form__order-list-item--surname .form__input-wrapper {
-      //min-width: 375px;
-    }
-
-    & .form__order-list-item--middlename .form__input-wrapper {
-      //min-width: 375px;
-    }
   }
 
   .form__order-blank--phone {
@@ -679,7 +677,6 @@
     }
 
     & input {
-      //margin-left: 16px;
       background-color: #f1f1f1;
       padding-bottom: 13px;
       width: 96.6%;
@@ -706,9 +703,7 @@
 
   .form__order-blank--mail {
     margin-bottom: 27px;
-    //padding: 41px 0 0 217px;
     background-color: #f1f1f1;
-    //padding: 0;
 
     & .form__order-description {
       position: absolute;
@@ -727,7 +722,6 @@
       font-size: 19px;
       padding-bottom: 13px;
       border-bottom: 2px solid black;
-      //opacity: 0.3;
 
       &::-webkit-input-placeholder { /* Chrome */
         color: $black;
@@ -756,7 +750,6 @@
     }
 
     & .form__input-wrapper {
-      //margin: 0;
       margin: -3px 0 51px;
       width: 88%;
 
@@ -779,11 +772,9 @@
 
     & textarea {
       font-size: 19px;
-      //width: 100%;
       min-height: 142px;
       margin-bottom: 48px;
       color: $black;
-      //opacity: 0.3;
       border: 2px solid black;
       width: 65.2vw;
       padding: 14px;
@@ -829,8 +820,6 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    //width: 1150px;
-    //margin: 0 auto;
     margin-bottom: 0;
   }
 
@@ -878,7 +867,6 @@
   }
 
   .form__order-blank {
-    //padding: 0 230px;
     max-width: 1150px;
     margin: 0 auto;
   }
@@ -941,18 +929,6 @@
       left: -114px;
     }
   }
-
-  //.form__order-blank--colors {
-  //  &::before {
-  //    width: calc((200vw - 960px) * 2);
-  //    height: 228px;
-  //    background-color: #f1f1f1;
-  //    top: 0;
-  //    left: -50%;
-  //    position: absolute;
-  //    content: "";
-  //  }
-  //}
 
   .form__order-blank--names {
     padding-left: 226px;
