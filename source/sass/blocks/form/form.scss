@@ -313,17 +313,14 @@
     }
   }
 
-  & label:hover input {
-    border: none;
-    opacity: 1;
-  }
-
   & input:hover {
-    border: none;
-    border-bottom: 2px solid $accent;
+    border-color: $accent;
+    opacity: 1;
+    outline: none;
   }
 
   & input:focus-within {
+    border-color: $accent;
     opacity: 1;
     outline: none;
   }
@@ -434,17 +431,18 @@
     line-height: 16px;
     font-weight: 700;
   }
-
-  &:hover span {
-    opacity: 1;
-    color: white;
-  }
-
-  &:active span {
-    opacity: 0.3;
-    color: white;
-  }
 }
+
+.form__submit-button:hover span {
+  opacity: 1;
+  color: white;
+}
+
+.form__submit-button:active span {
+  opacity: 0.3;
+  color: white;
+}
+
 
 .form__submit-button:focus-within {
   background-color: #444444;
@@ -636,25 +634,12 @@
       width: auto;
     }
 
-    & .form__order-list-item--surname label {
-      width: auto;
-    }
-
-    & .form__order-list-item--middlename label {
-      width: auto;
-    }
-
     & input {
       font-size: 19px;
       padding: 0;
       padding-bottom: 15px;
       padding-left: 17px;
       width: 96%;
-    }
-
-    & label:hover input,
-    & label:focus input {
-      border-bottom: 2px solid $accent;
     }
 
     & .form__input-wrapper {
@@ -666,6 +651,12 @@
       flex-grow: 1;
     }
   }
+
+  .form__order-label:hover.form__order-input,
+  .form__order-label:focus.form__order-input {
+    border-bottom: 2px solid $accent;
+  }
+
 
   .form__order-blank--phone {
     padding-top: 36px;

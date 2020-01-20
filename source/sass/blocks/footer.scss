@@ -1,8 +1,6 @@
 .footer {
   background-color: #f1f1f1;
   padding-top: 25px;
-  //width: 100%;
-  //margin: 0 auto;
 }
 
 .footer-wrapper {
@@ -15,7 +13,6 @@
   font-weight: 700;
   list-style: none;
   margin: 0 22px 0 -31px;
-  //margin: 0 -21px 0 -36px;
 }
 
 .footer__socials-list-wrapper {
@@ -47,7 +44,6 @@
 
 .footer__developer {
   display: flex;
-  //justify-content: center;
   align-items: center;
   text-decoration: none;
   color: #000000;
@@ -58,7 +54,7 @@
     margin-top: 4px;
   }
 
-  & .footer__developer:focus span {
+  &:focus span {
     opacity: 0.6;
   }
 
