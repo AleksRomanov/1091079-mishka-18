@@ -128,7 +128,7 @@
     min-height: 465px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/review@2x.jpg");
+      background-image: url("../img/review@2x.webp"), url("../img/review@2x.jpg");
     }
 
     .comment__buttons {

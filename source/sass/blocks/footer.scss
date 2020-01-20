@@ -19,6 +19,7 @@
   padding: 0 10px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -113,16 +114,16 @@
   .footer__developer {
     padding: 0;
     margin-left: -1px;
+  }
 
-    .developer__logo {
-      width: 42px;
-      height: auto;
-      object-position: 6px 2px;
-    }
+  .developer__logo {
+    width: 42px;
+    height: auto;
+    object-position: 6px 2px;
+  }
 
-    & svg {
-      margin-top: 7px;
-    }
+  & svg {
+    margin-top: 7px;
   }
 
   .footer__logo {
